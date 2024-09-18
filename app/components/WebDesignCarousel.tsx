@@ -15,8 +15,8 @@ const NextJsCarousel = () => {
                 autoPlay={true}
                 interval={2000}
             >
-                {WebDesignCard.map((link) => (
-                    <div className="pb-12">
+                {WebDesignCard.map((link, index) => (
+                    <div className="pb-12" key={index}>
                         <Image
                             src={link.links}
                             alt="webdesign"

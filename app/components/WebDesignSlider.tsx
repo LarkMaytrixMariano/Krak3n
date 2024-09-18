@@ -19,8 +19,8 @@ const EmblaCarousel = () => {
         <div className="embla displaynone lg:w-[928px] w-[420px]">
             <div className="embla__viewport shadow-xl" ref={emblaRef}>
                 <div className='embla__container'>
-                    {WebDesignCard.map((link) => (
-                        <div className="embla__slide lg:flex lg:flex-row rounded-xl px-10 py-[9%] lg:py-[7%] my-5 text-sm lg:w-[1000px] w-[420px]">
+                    {WebDesignCard.map((link, index) => (
+                        <div className="embla__slide lg:flex lg:flex-row rounded-xl px-10 py-[9%] lg:py-[7%] my-5 text-sm lg:w-[1000px] w-[420px]" key={index}>
                             <Image
                                 src={link.links}
                                 alt="webdesign"

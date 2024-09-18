@@ -15,8 +15,8 @@ const NextJsCarousel = () => {
                 autoPlay={true}
                 interval={2000}
             >
-            {NFTs1.links.map((link) => (
-              <div className='carousel2 pb-12'>
+            {NFTs1.links.map((link, index) => (
+              <div className='carousel2 pb-12' key={index}>
               <Image 
               src={link}
               alt="stickers"
