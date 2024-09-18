@@ -13,7 +13,7 @@ const Footer = () => {
       <div className='pb-5 krakendisplay'>
         <Link href="/">
           <Image 
-          src="/kraken GFX.png"
+          src="/Kraken_GFX.png"
           alt='logo'
           width={230}
           height={59}
