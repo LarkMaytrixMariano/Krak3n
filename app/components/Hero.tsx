@@ -6,7 +6,7 @@ import Parallax from './Parallax'
 
 const Hero = () => {
   return (
-<section className='w-screen overflow-hidden bg-bg-img-2 bg-no-repeat bg-bottom bg-cover 4xl:bg-custom-bottom 4xl:h-[1200px] 4xl:w-full border-red-500 border-2'>
+<section className='lg:w-screen overflow-hidden bg-bg-img-2 bg-no-repeat bg-bottom bg-cover 4xl:bg-custom-bottom 4xl:h-[1200px] 4xl:w-full border-red-500 border-2'>
   <div className='max-w-[1440px] mx-auto px-6 lg:px-20 3xl:px-0 flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row h-[1250px] border-2 border-red-500'>
     <div className='flex flex-col items-center w-full'>
       <Image 

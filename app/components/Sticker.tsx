@@ -4,9 +4,9 @@ import Image from 'next/image'
 
 const Sticker = () => {
   return (
-    <section className='relative max-container padding-container flexCenter flex-col items-center justify-center pb-[100px] mt-10 pt-[100px] border-2 border-red-500' id="Stickers">
+    <section className='relative max-container padding-container flexCenter flex-col items-center justify-center pb-[100px]  pt-[100px] border-2 border-red-500' id="Stickers">
       <div className='relative flex flex-col items-center justify-center lg:items-start lg:justify-start gap-12'>
-        <h2 className='font-black text-[90px] text-center lg:text-[264px] web-gradient w-full lg:w-auto'>STICKERS</h2>
+        <h2 className='font-black text-[76px] text-center lg:text-[264px] web-gradient w-full lg:w-auto'>STICKERS</h2>
         <div className='grid grid-cols-2'>
           {/* Left Side: Grid of images */}
           <div className='grid grid-cols-2 lg:flex lg:flex-nowrap lg:mt-[37%]'>
