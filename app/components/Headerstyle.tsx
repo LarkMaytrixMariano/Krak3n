@@ -26,7 +26,7 @@ export const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ onClose }) => {
     return (
         <div className="absolute inset-0  bg-[#8CE2F1] z-10 overflow-y-hidden h-[100vh] items-center justify-center">
             <div className="text-end p-5 font-poppins font-bold text-[40px] hover:cursor-pointer" onClick={onClose}>X</div>
-            <div className="flex-col flex text-center font-poppins font-medium text-[24px] text-[#043F48] py-[30%]  ml-[10%]">
+            <div className="flex-col flex text-center font-poppins font-medium text-[24px] text-[#043F48] py-[30%]">
                 {NAV_LINKS.map((link) => (
                     <a key={link.key} href={link.href}
                     className="hover:opacity-60 pt-[30px]"
