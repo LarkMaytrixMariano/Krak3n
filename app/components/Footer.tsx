@@ -5,11 +5,11 @@ import { FOOTER_LINKS, SOCIALS } from '@/constants'
 
 const Footer = () => {
   return (
-    <footer className='relative overflow-hidden border-2 border-red-500  pt-[32%]'>
+    <footer className='relative overflow-hidden  pt-[32%]'>
     <div className='absolute inset-0 bg-bg-img-3 bg-cover bg-no-repeat bg-center z-[-1]'>
     </div> 
   
-    <div className='max-w-[1440px] mx-auto px-[10%] border-2 border-red-500 '>
+    <div className='max-w-[1440px] mx-auto px-[10%]'>
       <div className='pb-5 krakendisplay'>
         <Link href="/">
           <Image 

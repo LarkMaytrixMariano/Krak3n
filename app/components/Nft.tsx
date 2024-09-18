@@ -3,7 +3,7 @@ import React from 'react'
 
 const Nft = () => {
   return (
-    <section className='relative max-container padding-container flexCenter flex-col items-center justify-center pb-[100px] mt-10 border-2 border-red-500' id="Nfts">
+    <section className='relative max-container padding-container flexCenter flex-col items-center justify-center pb-[100px] mt-10 ' id="Nfts">
       <Image 
         src="/NFT_SECTION.svg"
         alt="nft"
