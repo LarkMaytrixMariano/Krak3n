@@ -12,7 +12,7 @@ const page = () => {
         <div className="lg:flex lg:flex-row bg-[#EEF4F4] bg-opacity-15 rounded-xl px-10 py-[9%] lg:py-[7%] my-5 text-sm shadow-xl lg:w-[1000px] w-[420px] displaynone">
           <div className='mx-auto flex'>
             <Image 
-              src="sticker14.svg"
+              src="bigSticker.svg"
               alt="Sticker"
               height={308}
               width={514}
