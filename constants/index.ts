@@ -98,7 +98,7 @@ export const NAV_LINKS = [
   
   export const STICKERS1 = {
     links: [
-      '/sticker14.svg',
+      '/bigSticker.svg',
       '/sticker15.svg',
       '/sticker16.svg',
       '/sticker17.svg',
