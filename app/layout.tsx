@@ -23,6 +23,7 @@ export default function RootLayout({
         </main>
         <Footer />
       </div>  
+      <link rel="icon" href="/krakenlogo.svg" />
       </body>
     </html>
   );
