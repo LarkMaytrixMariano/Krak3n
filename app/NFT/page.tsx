@@ -20,8 +20,8 @@ const page = () => {
            />
            </div>
            <div className='ml-10 px-auto flex flex-wrap gap-10 items-center justify-center w-3/4'>
-              {NFTs.links.map((link) => (
-                  <div className='px-auto flex flex-wrap gap-5 items-center justify-center'>
+              {NFTs.links.map((link, index) => (
+                  <div key={index} className='px-auto flex flex-wrap gap-5 items-center justify-center'>
                   <Image 
                   src={link}  
                   alt="NFTs"

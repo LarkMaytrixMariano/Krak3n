@@ -19,8 +19,8 @@ const page = () => {
             />
           </div>  
           <div className='px-auto mt-5 flex flex-wrap gap-10 items-center justify-center'>
-            {STICKERS.links.map((link) => (
-              <div className='px-auto mt-5 flex flex-wrap gap-5 items-center justify-center'>
+            {STICKERS.links.map((link, index) => (
+              <div key={index} className='px-auto mt-5 flex flex-wrap gap-5 items-center justify-center'>
               <Image 
               src={link}
               alt="stickers"
