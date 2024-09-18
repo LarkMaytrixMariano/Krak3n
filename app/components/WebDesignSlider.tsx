@@ -47,7 +47,7 @@ const EmblaCarousel = () => {
                 <div className='flex justify-center'>
                 <button className="embla__prev pr-3 mb-5 text-[#DFFAFF] flex" onClick={scrollPrev}>
                     <Image 
-                        src={'/left.svg'}
+                        src={'/Left.svg'}
                         alt="Previous"
                         height={10}
                         width={10}
@@ -57,7 +57,7 @@ const EmblaCarousel = () => {
                 <button className="embla__next pl-3 mb-5 text-[#DFFAFF] flex" onClick={scrollNext}>
                     Next
                     <Image 
-                        src={'/right.svg'}
+                        src={'/Right.svg'}
                         alt="Next"
                         height={10}
                         width={10}
