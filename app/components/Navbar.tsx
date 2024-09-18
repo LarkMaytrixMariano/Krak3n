@@ -1,9 +1,18 @@
+"use client"; // This must be the first line in the file
+
+
 import { NAV_LINKS } from '@/constants'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
+import { HamburgerMenu } from './Headerstyle'
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+  
   return (
     <nav className='flexBetween max-container padding-container relative z-30 py-5 '>
       <Link href="/">
@@ -28,7 +37,10 @@ const Navbar = () => {
           alt="menu"
           width={36}
           height={25.71}
+          onClick={toggleMenu} // Call toggleMenu function when the menu button is clicked
+          className='cursor-pointer'
         />
+        {menuOpen && <HamburgerMenu onClose={toggleMenu} />} {/* Pass onClose function to close the menu */}
       </div>
     </nav>
   )

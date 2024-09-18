@@ -87,20 +87,52 @@ export const NAV_LINKS = [
 
   export const STICKERS = {
     links: [
-      '/sticker15.png',
-      '/sticker16.png',
-      '/sticker17.png',
-      '/sticker18.png',
-      '/sticker19.png',
-      '/sticker20.png',
+      '/sticker15.svg',
+      '/sticker16.svg',
+      '/sticker17.svg',
+      '/sticker18.svg',
+      '/sticker19.svg',
+      '/sticker20.svg',
+    ],
+  };
+  
+  export const STICKERS1 = {
+    links: [
+      '/sticker14.svg',
+      '/sticker15.svg',
+      '/sticker16.svg',
+      '/sticker17.svg',
+      '/sticker18.svg',
+      '/sticker19.svg',
+      '/sticker20.svg',
     ],
   };
 
   export const NFTs = {
     links: [
-      '/NFT2.png',
-      '/NFT3.png',
-      '/NFT4.png',
-      '/NFT5.png',
+      '/NFT2.svg',
+      '/NFT3.svg',
+      '/NFT4.svg',
+      '/NFT5.svg',
     ],
   };
+
+  export const NFTs1 = {
+    links: [
+      '/NFT1.svg',
+      '/NFT2.svg',
+      '/NFT3.svg',
+      '/NFT4.svg',
+      '/NFT5.svg',
+    ],
+  };
+
+  export const WebDesignCard = [
+    { links: '/LAPTOP1.svg', title: 'ClubMonteCarlo', description: 'A web3 NFT/Casino gaming platform project, launched on SOL and ETH network' },
+    { links: '/GLITTER 1.svg', title: 'Glitter Finance', description: 'Cryptocurrency Bridge innovator project. Link: glitterfinance.org' },
+    { links: '/GLITTER 2.svg', title: 'FreshSwap', description: 'A decentralized Finance project that solves most of DEX’s common issues.' },
+    { links: '/GLITTER 3.svg', title: 'Luster Protocol', description: 'A Cross-Chain, borrow and lend platform with institutional-grade algorithm.' },
+    { links: '/GLITTER 4.svg', title: 'Cryptok Lodgings', description: 'An exclusive membership group that aims to deliver alpha news to its community.' },
+    { links: '/GLITTER 5.svg', title: 'Trident', description: 'An automated bot trading protocol that promised to generate a 2% ROI per day.' },
+]
+
