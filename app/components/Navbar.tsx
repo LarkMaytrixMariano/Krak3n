@@ -24,7 +24,7 @@ const Navbar = () => {
       <li key={link.key}>
         <a 
           href={link.href}
-          className='text-[18px] font-medium flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold'
+          className='text-[26px] font-medium font-inter flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold'
         >
           {link.label}
         </a>

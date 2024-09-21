@@ -16,13 +16,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-      <div className="bg-bg-img-4 bg-no-repeat bg-cover bg-center h-[1240px]">
+      <div className="bg-bg-img-6 bg-no-repeat bg-cover bg-center lg:h-[1240px] h-[800px]">
         <Navbar />
         <main className="relative overflow-hidden">
         {children}
         </main>
         <Footer />
-      </div>  
+      </div> 
       <link rel="icon" href="/krakenlogo.svg" />
       </body>
     </html>

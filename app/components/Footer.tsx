@@ -6,7 +6,7 @@ import { FOOTER_LINKS, SOCIALS } from '@/constants'
 const Footer = () => {
   return (
     <footer className='relative overflow-hidden  pt-[32%]'>
-    <div className='absolute inset-0 bg-bg-img-3 bg-cover bg-no-repeat bg-center z-[-1]'>
+    <div className='absolute inset-0 lg:bg-bg-img-3 max-lg:bg-bg-img-5 bg-cover bg-no-repeat bg-bottom z-[-1] '>
     </div> 
   
     <div className='max-w-[1440px] mx-auto px-[10%]'>
@@ -82,7 +82,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='text-center pb-7'>
-        <span className='text-white'>&#169; 2024 KRAKEN | All rights reserved </span>
+        <span className='text-white '>&#169; 2024 KRAKEN | All rights reserved </span>
       </div>
     </div>
   </footer>  
