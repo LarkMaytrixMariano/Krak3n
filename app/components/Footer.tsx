@@ -1,12 +1,19 @@
+"use client"; // Add this line
+
+
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FOOTER_LINKS, SOCIALS } from '@/constants'
+import { usePathname} from 'next/navigation';
 
 const Footer = () => {
+  const pathname = usePathname(); // Get the current path
+  const isContactPage = pathname === '/Contact'; // Adjust this based on your contact page route
+
   return (
-    <footer className='relative overflow-hidden  pt-[32%]'>
-    <div className='absolute inset-0 lg:bg-bg-img-3 max-lg:bg-bg-img-5 bg-cover bg-no-repeat bg-bottom z-[-1] '>
+    <footer className='relative overflow-hidden pt-[32%] z-[30]'>
+    <div className='absolute inset-0 lg:bg-bg-img-3 max-lg:bg-bg-img-5 bg-cover bg-no-repeat bg-bottom z-[-1]'>
     </div> 
   
     <div className='max-w-[1440px] mx-auto px-[10%]'>

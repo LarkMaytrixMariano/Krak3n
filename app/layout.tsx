@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ClientLayout from "./ClientLayout";
 
 export const metadata: Metadata = {
   title: "Kraken",
@@ -16,13 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-      <div className="bg-bg-img-6 bg-no-repeat bg-cover bg-center lg:h-[1240px] h-[800px]">
-        <Navbar />
-        <main className="relative overflow-hidden">
-        {children}
-        </main>
-        <Footer />
-      </div> 
+      <ClientLayout>{children}</ClientLayout>
       <link rel="icon" href="/krakenlogo.svg" />
       </body>
     </html>
