@@ -229,14 +229,14 @@ body {
   }
 }
 
-@media (min-width:577px)
+@media (min-width:1023px)
 {
   .krakendisplay {
     display:none;
   }
 }
 
-@media (max-width:576px)
+@media (max-width:1022px)
 {
   .krakendisplay {
     display:block;
@@ -384,5 +384,16 @@ body {
 {
   .embla__viewport {
     width: 420px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  /* Reorder the boxes */
+  #div1 {
+      order: 2; /* Position 3 in mobile */
+  }
+  #div2 {
+      order: 1; /* Position 1 in mobile */
   }
 }

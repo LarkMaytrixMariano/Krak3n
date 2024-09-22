@@ -4,12 +4,18 @@ import Image from 'next/image'
 
 const Sticker = () => {
   return (
-    <section className='relative max-container padding-container flexCenter flex-col items-center justify-center pb-[100px]  pt-[100px]' id="Stickers">
+    <section className='relative max-container padding-container flexCenter flex-col items-center justify-center pb-[100px]  pt-[200px]' id="Stickers">
       <div className='relative flex flex-col items-center justify-center lg:items-start lg:justify-start gap-12'>
+      <div className='lg:hidden z-30 absolute'>
+       <Image 
+          src="/stickerBg.svg" alt="bubbles" width={1440} height={1440}
+          className='mb-[125%] ml-[10%]'
+        />
+       </div>
         <h2 className='font-black text-[76px] text-center lg:text-[264px] web-gradient w-full lg:w-auto'>STICKERS</h2>
         <div className='grid grid-cols-2'>
           {/* Left Side: Grid of images */}
-          <div className='grid grid-cols-2 lg:flex lg:flex-nowrap lg:mt-[37%]'>
+          <div className='grid grid-cols-2 lg:flex lg:flex-nowrap lg:mt-[37%] mt-[-5%]'>
             {PEOPLE_URL.map((url) => (
               <Image 
                 className='rounded-full lg:h-[218px] lg:w-[218px]'
@@ -22,7 +28,7 @@ const Sticker = () => {
             ))}
           </div>
           {/* Right Side: Leader sticker */}
-          <div className='absolute top-[calc(5%+10px)] lg:top-[calc(15%+10px)] left-[calc(30%+10px)] lg:left-[calc(50%+10px)]'>
+          <div className='absolute top-[calc(3%+10px)] lg:top-[calc(15%+10px)] left-[calc(30%+10px)] lg:left-[calc(50%+10px)]'>
             <Image 
               src="/stickerleader.svg"
               alt="mainsticker"

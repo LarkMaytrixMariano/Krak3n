@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const WebDesign = () => {
   return (
-    <section className='relative padding-container flexCenter flex-col items-center justify-center 4xl:pt-[18%] pt-[10%]' id="WebDesign" >
+    <section className='relative padding-container flexCenter flex-col items-center justify-center 4xl:pt-[18%] pt-[15%] lg:pt-[1%]  border-red-500 border-2' id="WebDesign" >
       <div className='absolute left-0 right-0 top-0 lg:mt-[-45%] mt-[-35%] 4xl:mt-[-17%]'>
         <img 
           src="/bghero.svg"
@@ -20,7 +20,7 @@ const WebDesign = () => {
        <div className='lg:hidden z-30 absolute'>
        <Image 
           src="/bubblesMobile.svg" alt="bubbles" width={1440} height={1440}
-          className='mt-[-50%] ml-[5%]'
+          className='mt-[-45%] ml-[5%]'
         />
        </div>
     <div className=' items-center justify-center max-container'>
@@ -39,7 +39,7 @@ const WebDesign = () => {
       </div>
         <div className='items-center justify-center pt-[65%] lg:pt-[0.5%]'>
           <div className='flex items-center justify-center lg:justify-end lg:items-end'>
-            <p className='font-normal text-[16px] text-white text-center leading-8 px-4 lg:text-end lg:w-[50%] w-[100%] pt-10'>
+            <p className='font-normal text-[16px] text-white text-center leading-8 px-4 lg:text-end lg:w-[50%] w-[100%] pt-15'>
               We don’t just design, we craft digital
               experiences that are interactive, and visually 
               stunning. Your website is your digital 

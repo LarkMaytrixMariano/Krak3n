@@ -4,7 +4,7 @@ import React from 'react'
 const Parallax = () => {
   return (
     <div className='lg:flex lg:flex-col xl:flex-row items-center justify-center hidden'>
-        <h1 className='font-black text-[220px] xl:text-[310px] kraken-gradient lg:mt-[-7%] lg:mb-[-5%]'>KRAKEN</h1>
+        <h1 className='font-black text-[220px] xl:text-[325px] kraken-gradient lg:mt-[-7%] lg:mb-[-5%]'>KRAKEN</h1>
       <div className='absolute'>
         <Image 
           src="/jellyleft.svg" alt="logo" width={197} height={224}
