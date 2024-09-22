@@ -4,12 +4,18 @@ import Image from 'next/image'
 
 const Sticker = () => {
   return (
-    <section className='relative max-container padding-container flexCenter flex-col items-center justify-center pb-[100px]  pt-[200px]' id="Stickers">
+    <section className='relative max-container padding-container flexCenter flex-col items-center justify-center pb-[100px] lg:pt-[400px] pt-[200px]' id="Stickers">
       <div className='relative flex flex-col items-center justify-center lg:items-start lg:justify-start gap-12'>
       <div className='lg:hidden z-30 absolute'>
        <Image 
           src="/stickerBg.svg" alt="bubbles" width={1440} height={1440}
-          className='mb-[125%] ml-[10%]'
+          className='mb-[125%] ml-[15%]'
+        />
+       </div>
+       <div className='lg:absolute z-30 hidden lg:block'>
+       <Image 
+          src="/stickerBg2.svg" alt="bubbles" width={1440} height={1440}
+          className='mt-[-4%] ml-[10%]'
         />
        </div>
         <h2 className='font-black text-[76px] text-center lg:text-[264px] web-gradient w-full lg:w-auto'>STICKERS</h2>

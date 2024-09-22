@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const WebDesign = () => {
   return (
-    <section className='relative padding-container flexCenter flex-col items-center justify-center 4xl:pt-[18%] pt-[15%] lg:pt-[1%]  border-red-500 border-2' id="WebDesign" >
+    <section className='relative padding-container flexCenter flex-col items-center justify-center 4xl:pt-[18%] pt-[15%] lg:pt-[1%]  ' id="WebDesign" >
       <div className='absolute left-0 right-0 top-0 lg:mt-[-45%] mt-[-35%] 4xl:mt-[-17%]'>
         <img 
           src="/bghero.svg"
