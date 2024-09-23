@@ -46,7 +46,7 @@ const Sticker = () => {
         </div>
         <div className='items-center justify-center  lg:pt-[0.5%] lg:items-start lg:text-start'>
           <div className='flex items-start justify-start lg:justify-start lg:items-start'>
-            <p className='font-normal text-[16px] text-white text-center leading-8 px-4 lg:text-start lg:w-[50%] w-[100%] lg:mt-[-40%]'>
+            <p className='font-normal text-[16px] lg:text-[24px] text-white text-center leading-8 px-4 lg:text-start lg:w-[50%] w-[100%] lg:mt-[-40%]'>
             We design unique stickers that reflect your unique taste. Our stickers are fun, engaging, and humorous— they're sure to spark conversation and lighten the mood. We believe that stickers have the power to bring people together, and we're here to help you create a sticker collection that perfectly captures the spirit of your community.
             </p>
           </div>

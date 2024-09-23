@@ -30,7 +30,7 @@ body {
   }
 
   .web-gradient {
-    background: linear-gradient(360deg, #DFFAFF 0.5%, #038AA2 90%);
+    background: linear-gradient(360deg, #DFFAFF 1%, #036e81 46%);
     -webkit-background-clip: text; /* Applies background to text */
     -webkit-text-fill-color: transparent; /* Makes text color transparent to show background */
   }
