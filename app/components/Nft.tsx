@@ -57,8 +57,8 @@ const Nft = () => {
       <div className=' mt-10'>
           {/* Left Side: Grid of images */}
           <div className='flex flex-row'>
-            {BUBBLES_NFT.map((url) => (
-              <div className=''>
+            {BUBBLES_NFT.map((url, index) => (
+              <div className='' key={index}>
               <Image 
                 className='rounded-full lg:h-[218px] lg:w-[218px]'
                 src={url}
