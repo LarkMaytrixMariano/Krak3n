@@ -35,7 +35,7 @@ const Footer = () => {
               <li className='mb-5 displaynone'>
                 <Link href="/">
                   <Image 
-                    src="/kraken_GFX.png"
+                    src="/Kraken_GFX.png"
                     alt='logo'
                     width={230}
                     height={59}
