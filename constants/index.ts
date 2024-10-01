@@ -76,17 +76,17 @@ export const NAV_LINKS = [
   ];
   
   // Stickers Carousel
-  export const STICKERS1 = {
-    links: [
-      '/bigSticker.svg',
-      '/sticker15.svg',
-      '/sticker16.svg',
-      '/sticker17.svg',
-      '/sticker18.svg',
-      '/sticker19.svg',
-      '/sticker20.svg',
-    ],
-  };
+
+  export const STICKERSCAROUSEL = [
+    { main: '/PepeMain.svg', sub: ['/Pepe1.svg', '/Pepe2.svg', '/Pepe3.svg', '/Pepe4.svg'], },
+    { main: '/PopeMain.svg', sub: ['/Pope1.svg', '/Pope2.svg', '/Pope3.svg', '/Pope4.svg'], },
+    { main: '/BullsMain.svg', sub: ['/Bulls1.svg', '/Bulls2.svg', '/Bulls3.svg', '/Bulls4.svg'], },
+    { main: '/BBullsMain.svg', sub: ['/BBulls1.svg', '/BBulls2.svg', '/BBulls3.svg', '/BBulls4.svg'], },
+    { main: '/ElmoMain.svg', sub: ['/Elmo1.svg', '/Elmo2.svg', '/Elmo3.svg', '/Elmo4.svg'], },
+    { main: '/MayanMain.svg', sub: ['/Mayan1.svg', '/Mayan2.svg', '/Mayan3.svg', '/Mayan4.svg'], },
+    { main: '/PonkMain.svg', sub: ['/Ponk1.svg', '/Ponk2.svg', '/Ponk3.svg', '/Ponk4.svg'], },
+
+  ];
 
   // NFT Slider
   export const NFTslide = [
@@ -123,4 +123,5 @@ export const NAV_LINKS = [
     { links: '/GLITTER 4.svg', title: 'Cryptok Lodgings', description: 'An exclusive membership group that aims to deliver alpha news to its community.' },
     { links: '/GLITTER 5.svg', title: 'Trident', description: 'An automated bot trading protocol that promised to generate a 2% ROI per day.' },
 ]
+
 

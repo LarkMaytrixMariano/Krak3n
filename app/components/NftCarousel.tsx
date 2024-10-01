@@ -2,7 +2,7 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import Image from 'next/image'
-import { NFTs1 } from '@/constants'
+import { NFTslide } from '@/constants'
 
 const NextJsCarousel = () => {
     return (
@@ -15,16 +15,31 @@ const NextJsCarousel = () => {
                 autoPlay={true}
                 interval={2000}
             >
-            {NFTs1.links.map((link, index) => (
-              <div className='carousel2 pb-12' key={index}>
-              <Image 
-              src={link}
-              alt="stickers"
-              width={50}
-              height={50}
-             />
-             </div>
-             ))}
+                    {NFTslide.map((sticker, index) => (
+                        <div className="px-10 py-[9%] lg:py-[7%] w-[350px] mb-10" key={index}>
+                            <div className='mx-auto flex mb-5'>
+                                <Image
+                                src={sticker.main}
+                                alt="webdesign" 
+                                height={308}
+                                width={514}
+                            />
+                            </div>
+                            <div className='flex justify-center mx-auto'>
+                            {sticker.sub.map((image) => (
+                                <div className="mx-1 border border-white bg-[#038AA2] rounded-xl ">
+                                    <Image      
+                                        src={image}
+                                        alt="stickers"
+                                        width={80} 
+                                        height={80}
+                                        className="rounded-xl"
+                                    />
+                                </div>    
+                            ))}    
+                            </div>    
+                        </div>
+                    ))}
             </Carousel>
         </div>
     );
