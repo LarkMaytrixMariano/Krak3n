@@ -26,8 +26,8 @@ const NextJsCarousel = () => {
                             />
                             </div>
                             <div className='flex justify-center mx-auto'>
-                            {sticker.sub.map((image) => (
-                                <div className="mx-1 border border-white bg-[#038AA2] rounded-xl ">
+                            {sticker.sub.map((image, index) => (
+                                <div className="mx-1 border border-white bg-[#038AA2] rounded-xl" key={index}>
                                     <Image      
                                         src={image}
                                         alt="stickers"
