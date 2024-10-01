@@ -63,17 +63,19 @@ export const NAV_LINKS = [
     ],
   };
 
-  export const STICKERS = {
-    links: [
-      '/sticker15.svg',
-      '/sticker16.svg',
-      '/sticker17.svg',
-      '/sticker18.svg',
-      '/sticker19.svg',
-      '/sticker20.svg',
-    ],
-  };
+  // Stickers SLider
+  export const PEPESTICKERS = [
+    { main: '/PepeMain.svg', sub: ['/Pepe1.svg', '/Pepe2.svg', '/Pepe3.svg', '/Pepe4.svg', '/Pepe5.svg', '/Pepe6.svg', '/Pepe7.svg', '/Pepe8.svg'], },
+    { main: '/PopeMain.svg', sub: ['/Pope1.svg', '/Pope2.svg', '/Pope3.svg', '/Pope4.svg', '/Pope5.svg', '/Pope6.svg', '/Pope7.svg', '/Pope8.svg'], },
+    { main: '/BullsMain.svg', sub: ['/Bulls1.svg', '/Bulls2.svg', '/Bulls3.svg', '/Bulls4.svg', '/Bulls5.svg', '/Bulls6.svg', '/Bulls7.svg', '/Bulls8.svg'], },
+    { main: '/BBullsMain.svg', sub: ['/BBulls1.svg', '/BBulls2.svg', '/BBulls3.svg', '/BBulls4.svg', '/BBulls5.svg', '/BBulls6.svg', '/BBulls7.svg', '/BBulls8.svg'], },
+    { main: '/ElmoMain.svg', sub: ['/Elmo1.svg', '/Elmo2.svg', '/Elmo3.svg', '/Elmo4.svg', '/Elmo5.svg', '/Elmo6.svg', '/Elmo7.svg', '/Elmo8.svg'], },
+    { main: '/MayanMain.svg', sub: ['/Mayan1.svg', '/Mayan2.svg', '/Mayan3.svg', '/Mayan4.svg', '/Mayan5.svg', '/Mayan6.svg', '/Mayan7.svg', '/Mayan8.svg'], },
+    { main: '/PonkMain.svg', sub: ['/Ponk1.svg', '/Ponk2.svg', '/Ponk3.svg', '/Ponk4.svg', '/Ponk5.svg', '/Ponk6.svg', '/Ponk7.svg', '/Ponk8.svg'], },
+
+  ];
   
+  // Stickers Carousel
   export const STICKERS1 = {
     links: [
       '/bigSticker.svg',
@@ -95,6 +97,23 @@ export const NAV_LINKS = [
     ],
   };
 
+  // NFT Slider
+  export const NFTslide = [
+    { main: '/NFT1.svg', sub: ['/NFT2.svg', '/NFT3.svg', '/NFT4.svg', '/NFT5.svg'], },
+    { main: '/CyberpunksMain.svg', sub: ['/Cyberpunks1.svg', '/Cyberpunks2.svg', '/Cyberpunks3.svg', '/Cyberpunks4.svg'], },
+    { main: '/WearewolvesMain.svg', sub: ['/Wearewolves1.svg', '/Wearewolves2.svg', '/Wearewolves3.svg', '/Wearewolves4.svg'], },
+    { main: '/GepardsMain.svg', sub: ['/Gepards1.svg', '/Gepards2.svg', '/Gepards3.svg', '/Gepards4.svg'], },
+    { main: '/FoxMain.svg', sub: ['/Fox1.svg', '/Fox2.svg', '/Fox3.svg', '/Fox4.svg'], },
+    { main: '/CryptonautsMain.svg', sub: ['/Cryptonauts1.svg', '/Cryptonauts2.svg', '/Cryptonauts3.svg', '/Cryptonauts4.svg'], },
+    { main: '/SolpimpsMain.svg', sub: ['/Solpimps1.svg', '/Solpimps2.svg', '/Solpimps3.svg', '/Solpimps4.svg'], },
+    { main: '/PumpkingzMain.svg', sub: ['/Pumpkingz1.svg', '/Pumpkingz2.svg', '/Pumpkingz3.svg', '/Pumpkingz4.svg'], },
+    { main: '/GuardiansMain.svg', sub: ['/Guardians1.svg', '/Guardians2.svg', '/Guardians3.svg', '/Guardians4.svg'], },
+    { main: '/SolbabesMain.svg', sub: ['/Solbabes1.svg', '/Solbabes2.svg', '/Solbabes3.svg', '/Solbabes4.svg'], },
+    { main: '/MagusMain.svg', sub: ['/Magus1.svg', '/Magus2.svg', '/Magus3.svg', '/Magus4.svg'], },
+    
+  ];
+
+  // NFT Carousel
   export const NFTs1 = {
     links: [
       '/NFT1.svg',
