@@ -7,7 +7,7 @@ const page = () => {
   return (
     <section className='relative max-container padding-container flexCenter flex-col items-center justify-center pb-[100px]'>
         <div className=''>
-            <h1 className='font-black lg:text-[100px] kraken-gradient text-[70px] '>STICKERS</h1>
+            <h1 className='font-black lg:text-[100px] kraken-gradient text-[70px] '>MEMES</h1>
         </div>
         <Emblacarousel />
         <StickerCarousel />

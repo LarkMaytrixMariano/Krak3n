@@ -72,8 +72,18 @@ export const NAV_LINKS = [
     { main: '/ElmoMain.svg', sub: ['/Elmo1.svg', '/Elmo2.svg', '/Elmo3.svg', '/Elmo4.svg', '/Elmo5.svg', '/Elmo6.svg', '/Elmo7.svg', '/Elmo8.svg'], },
     { main: '/MayanMain.svg', sub: ['/Mayan1.svg', '/Mayan2.svg', '/Mayan3.svg', '/Mayan4.svg', '/Mayan5.svg', '/Mayan6.svg', '/Mayan7.svg', '/Mayan8.svg'], },
     { main: '/PonkMain.svg', sub: ['/Ponk1.svg', '/Ponk2.svg', '/Ponk3.svg', '/Ponk4.svg', '/Ponk5.svg', '/Ponk6.svg', '/Ponk7.svg', '/Ponk8.svg'], },
-
+    { main: '/Meme1.svg', sub: [], },
+    { main: '/Meme2.svg', sub: [], },
+    { main: '/Meme3.svg', sub: [], },
+    { main: '/Meme4.svg', sub: [], },
+    { main: '/Meme5.svg', sub: [], },
+    { main: '/Meme6.svg', sub: [], },
+    { main: '/Meme7.svg', sub: [], },
+    { main: '/Meme8.svg', sub: [], },
+    { main: '/Meme9.svg', sub: [], },
   ];
+
+  
   
   // Stickers Carousel
 
@@ -85,10 +95,31 @@ export const NAV_LINKS = [
     { main: '/ElmoMain.svg', sub: ['/Elmo1.svg', '/Elmo2.svg', '/Elmo3.svg', '/Elmo4.svg'], },
     { main: '/MayanMain.svg', sub: ['/Mayan1.svg', '/Mayan2.svg', '/Mayan3.svg', '/Mayan4.svg'], },
     { main: '/PonkMain.svg', sub: ['/Ponk1.svg', '/Ponk2.svg', '/Ponk3.svg', '/Ponk4.svg'], },
-
+    { main: '/Meme1.svg', sub: [], },
+    { main: '/Meme2.svg', sub: [], },
+    { main: '/Meme3.svg', sub: [], },
+    { main: '/Meme4.svg', sub: [], },
+    { main: '/Meme5.svg', sub: [], },
+    { main: '/Meme9.svg', sub: [], },
+    { main: '/Meme6.svg', sub: [], },
+    { main: '/Meme7.svg', sub: [], },
+    { main: '/Meme8.svg', sub: [], },
   ];
 
-  // NFT Slider
+  export const MEMEGRAPHICS = {
+    links: [
+      '/Meme1.svg',
+      '/Meme2.svg',
+      '/Meme3.svg',
+      '/Meme4.svg',
+      '/Meme5.svg',
+      '/Meme6.svg',
+      '/Meme7.svg',
+      '/Meme8.svg',
+    ],
+  };
+
+  // NFT Slider & Carousel
   export const NFTslide = [
     { main: '/NFT1.svg', sub: ['/NFT2.svg', '/NFT3.svg', '/NFT4.svg', '/NFT5.svg'], },
     { main: '/CyberpunksMain.svg', sub: ['/Cyberpunks1.svg', '/Cyberpunks2.svg', '/Cyberpunks3.svg', '/Cyberpunks4.svg'], },
@@ -104,24 +135,18 @@ export const NAV_LINKS = [
     
   ];
 
-  // NFT Carousel
-  export const NFTs1 = {
-    links: [
-      '/NFT1.svg',
-      '/NFT2.svg',
-      '/NFT3.svg',
-      '/NFT4.svg',
-      '/NFT5.svg',
-    ],
-  };
-
   export const WebDesignCard = [
-    { links: '/LAPTOP1.svg', title: 'ClubMonteCarlo', description: 'A web3 NFT/Casino gaming platform project, launched on SOL and ETH network' },
-    { links: '/GLITTER 1.svg', title: 'Glitter Finance', description: 'Cryptocurrency Bridge innovator project. Link: glitterfinance.org' },
-    { links: '/GLITTER 2.svg', title: 'FreshSwap', description: 'A decentralized Finance project that solves most of DEX’s common issues.' },
-    { links: '/GLITTER 3.svg', title: 'Luster Protocol', description: 'A Cross-Chain, borrow and lend platform with institutional-grade algorithm.' },
-    { links: '/GLITTER 4.svg', title: 'Cryptok Lodgings', description: 'An exclusive membership group that aims to deliver alpha news to its community.' },
-    { links: '/GLITTER 5.svg', title: 'Trident', description: 'An automated bot trading protocol that promised to generate a 2% ROI per day.' },
+    { links: '/WebDesign1.svg', title: 'ClubMonteCarlo', description: 'A web3 NFT/Casino gaming platform project, launched on SOL and ETH network' },
+    { links: '/WebDesign2.svg', title: 'Glitter Finance', description: 'Cryptocurrency Bridge innovator project. Link: glitterfinance.org' },
+    { links: '/WebDesign3.svg', title: 'FreshSwap', description: 'A decentralized Finance project that solves most of DEX’s common issues.' },
+    { links: '/WebDesign4.svg', title: 'Luster Protocol', description: 'A Cross-Chain, borrow and lend platform with institutional-grade algorithm.' },
+    { links: '/WebDesign5.svg', title: 'Cryptok Lodgings', description: 'An exclusive membership group that aims to deliver alpha news to its community.' },
+    { links: '/WebDesign6.svg', title: 'Trident', description: 'An automated bot trading protocol that promised to generate a 2% ROI per day.' },
+    { links: '/WebDesign7.svg', title: 'Trident', description: 'An automated bot trading protocol that promised to generate a 2% ROI per day.' },
+    { links: '/WebDesign8.svg', title: 'Trident', description: 'An automated bot trading protocol that promised to generate a 2% ROI per day.' },
+    { links: '/WebDesign9.svg', title: 'Trident', description: 'An automated bot trading protocol that promised to generate a 2% ROI per day.' },
+    { links: '/WebDesign10.svg', title: 'Trident', description: 'An automated bot trading protocol that promised to generate a 2% ROI per day.' },
+    { links: '/WebDesign11.svg', title: 'Trident', description: 'An automated bot trading protocol that promised to generate a 2% ROI per day.' },
 ]
 
 
