@@ -16,13 +16,14 @@ const NextJsCarousel = () => {
                 interval={5000}
             >
                     {STICKERSCAROUSEL.map((sticker, index) => (
-                        <div className="px-10 py-[9%] w-[350px] mb-10" key={index}>
-                            <div className='mx-auto flex h-[450px]'>
+                        <div className="px-10 pt-[9%] w-[350px] mb-10" key={index}>
+                            <div className='mx-auto flex'>
                                 <Image
                                 src={sticker.main}
                                 alt="webdesign" 
                                 height={400}
                                 width={450}
+                                className="pb-10"
                             />
                             </div>
                             <div className='flex mx-auto'>
