@@ -28,7 +28,7 @@ const EmblaCarousel = () => {
                                 height={354}
                                 width={354} 
                             />
-                            </div>
+                            </div>  
                             <div className='ml-10 px-auto flex flex-wrap gap-10 items-center justify-center w-4/6'>
                             {sticker.sub.map((image, index) => (
                                 <div key={index} className='px-auto flex flex-wrap gap-5 items-center justify-center'>

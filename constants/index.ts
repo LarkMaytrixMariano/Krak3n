@@ -88,15 +88,6 @@ export const NAV_LINKS = [
     ],
   };
 
-  export const NFTs = {
-    links: [
-      '/NFT2.svg',
-      '/NFT3.svg',
-      '/NFT4.svg',
-      '/NFT5.svg',
-    ],
-  };
-
   // NFT Slider
   export const NFTslide = [
     { main: '/NFT1.svg', sub: ['/NFT2.svg', '/NFT3.svg', '/NFT4.svg', '/NFT5.svg'], },
