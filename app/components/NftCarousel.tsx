@@ -13,7 +13,7 @@ const NextJsCarousel = () => {
                 showThumbs={false}
                 infiniteLoop={true}
                 autoPlay={true}
-                interval={2000}
+                interval={5000}
             >
                     {NFTslide.map((sticker, index) => (
                         <div className="px-10 py-[9%] lg:py-[7%] w-[350px] mb-10" key={index}>
