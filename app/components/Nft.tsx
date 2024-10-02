@@ -45,7 +45,7 @@ const Nft = () => {
             className='mt-[-75%] ml-[5%]'
               />
           </div>
-        <h1 className='font-black text-[150px] text-center lg:text-[384px] web-gradient w-full lg:w-auto z-20 mt-[-50%]'>NFTs</h1>
+        <h1 className='font-black text-[145px] text-center lg:text-[384px] web-gradient w-full lg:w-auto z-20 mt-[-50%]'>NFTs</h1>
       </div>
       <div className=' items-center justify-center  mt-[3%]  lg:mt-[5%] lg:items-center lg:text-center'>
           <div className='flex items-start justify-start lg:justify-start lg:items-start'>

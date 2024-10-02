@@ -17,7 +17,7 @@ const Hero = () => {
       <div className='mt-10 flex flex-wrap'>
         <ul className='flex flex-wrap gap-1 items-center justify-center'>
           {NAV_LINKS2.map((link) => (
-            <li key={link.key} className='lg:text-[32px] text-[18px] text-[#DFFAFF] font-normal flexCenter pb-1.5 transition-all font-poppins'>
+            <li key={link.key} className='lg:text-[32px] text-[16px] text-[#DFFAFF] font-normal flexCenter pb-1.5 transition-all font-poppins'>
               <p>{link.label}</p>
             </li>
           ))}
