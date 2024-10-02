@@ -2,7 +2,6 @@
 import React, { useCallback } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import { PEPESTICKERS } from '@/constants'
-import { MEMEGRAPHICS } from '@/constants'
 import Image from 'next/image'
 
 const EmblaCarousel = () => {
@@ -22,7 +21,7 @@ const EmblaCarousel = () => {
                 <div className='embla__container'>
                     {PEPESTICKERS.map((sticker, index) => (
                         <div className="embla__slide lg:flex lg:flex-row rounded-xl px-10 py-[9%] lg:py-[7%] my-5 text-sm lg:w-[1000px] w-[420px]" key={index}>
-                            <div className='mx-auto flex h-[450px] pt-10'>
+                            <div className='mx-auto pl-5 flex h-[450px] pt-10'>
                                 <Image
                                 src={sticker.main}
                                 alt="webdesign"

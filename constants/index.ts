@@ -63,7 +63,7 @@ export const NAV_LINKS = [
     ],
   };
 
-  // Stickers SLider
+  // Stickers Slider
   export const PEPESTICKERS = [
     { main: '/PepeMain.svg', sub: ['/Pepe1.svg', '/Pepe2.svg', '/Pepe3.svg', '/Pepe4.svg', '/Pepe5.svg', '/Pepe6.svg', '/Pepe7.svg', '/Pepe8.svg'], },
     { main: '/PopeMain.svg', sub: ['/Pope1.svg', '/Pope2.svg', '/Pope3.svg', '/Pope4.svg', '/Pope5.svg', '/Pope6.svg', '/Pope7.svg', '/Pope8.svg'], },
@@ -106,19 +106,6 @@ export const NAV_LINKS = [
     { main: '/Meme8.svg', sub: [], },
   ];
 
-  export const MEMEGRAPHICS = {
-    links: [
-      '/Meme1.svg',
-      '/Meme2.svg',
-      '/Meme3.svg',
-      '/Meme4.svg',
-      '/Meme5.svg',
-      '/Meme6.svg',
-      '/Meme7.svg',
-      '/Meme8.svg',
-    ],
-  };
-
   // NFT Slider & Carousel
   export const NFTslide = [
     { main: '/NFT1.svg', sub: ['/NFT2.svg', '/NFT3.svg', '/NFT4.svg', '/NFT5.svg'], },
@@ -135,6 +122,7 @@ export const NAV_LINKS = [
     
   ];
 
+  // Web Design Slider & Carousel
   export const WebDesignCard = [
     { links: '/WebDesign1.svg', title: 'ClubMonteCarlo', description: 'A web3 NFT/Casino gaming platform project, launched on SOL and ETH network' },
     { links: '/WebDesign2.svg', title: 'Glitter Finance', description: 'Cryptocurrency Bridge innovator project. Link: glitterfinance.org' },
