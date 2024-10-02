@@ -20,11 +20,13 @@ const NextJsCarousel = () => {
                 interval={5000}
             >
                     {STICKERSCAROUSEL.map((sticker, index) => (
-                        <div className="px-10 pt-[9%] w-[340px] mb-10" key={index}>
+                        <div className="px-10 pt-[9%] w-[340px] mb-10" key={index}
+                        onMouseLeave={() => setSelectedIndex(null)} // Reset on mouse leave
+                        >
                             <div className='mx-auto flex'>
                                 <Image
-                                src={hoveredIndex !== null && sticker.sub[hoveredIndex] ? sticker.sub[hoveredIndex] : sticker.main}
-                                alt="webdesign" 
+                                    src={selectedIndex !== null && sticker.sub[selectedIndex] ? sticker.sub[selectedIndex] : sticker.main } // Provide a default image path
+                                    alt="webdesign" 
                                     height={400}
                                     width={450}
                                     className="pb-10"
@@ -32,16 +34,19 @@ const NextJsCarousel = () => {
                             </div>
                             <div className='flex mx-auto'>
                             {sticker.sub.map((image, subIndex) => (
-                            <div 
+                                <div 
                                 key={subIndex} 
-                                className={`cursor-pointer mx-1 border rounded-xl ${hoveredIndex === subIndex ? 'filter blur-sm' : ''}`}
-                                onMouseEnter={() => setHoveredIndex(subIndex)} // Set the hovered index
-                                onMouseLeave={() => setHoveredIndex(null)} // Reset on mouse leave
+                                className={`cursor-pointer mx-1 border rounded-xl ${selectedIndex === subIndex ? 'filter blur-sm' : ''}`}
                                 onClick={() => {
-                                    setSelectedIndex(subIndex); // Set selected on click
-                                    setHoveredIndex(null); // Reset hover on click
+                                    if (selectedIndex === subIndex) {
+                                        // If the clicked sticker is already selected, reset
+                                        setSelectedIndex(null); // Unselect and revert to default
+                                    } else {
+                                        setSelectedIndex(subIndex); // Set selected on click
+                                    }
                                 }} 
-                            >
+                                onMouseLeave={() => setHoveredIndex(null)} // Reset on mouse leave
+                                >
                                     <Image      
                                         src={image}
                                         alt="stickers"

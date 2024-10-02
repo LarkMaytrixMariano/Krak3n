@@ -19,10 +19,12 @@ const NextJsCarousel = () => {
                 interval={5000}
             >
                     {NFTslide.map((sticker, index) => (
-                        <div className="px-10 py-[9%] lg:py-[7%] w-[350px] mb-10" key={index}>
+                        <div className="px-10 py-[9%] lg:py-[7%] w-[350px] mb-10" key={index}
+                        onMouseLeave={() => setSelectedIndex(null)} // Reset on mouse leave
+                        >
                             <div className='mx-auto flex mb-5'>
                                 <Image
-                                src={hoveredIndex !== null && sticker.sub[hoveredIndex] ? sticker.sub[hoveredIndex] : sticker.main}                                
+                                src={selectedIndex !== null ? sticker.sub[selectedIndex] : sticker.main}
                                 alt="webdesign" 
                                 height={308}
                                 width={514}
@@ -32,13 +34,16 @@ const NextJsCarousel = () => {
                             {sticker.sub.map((image, subIndex) => (
                             <div 
                                 key={subIndex} 
-                                className={`cursor-pointer mx-1 border rounded-xl ${hoveredIndex === subIndex ? 'filter blur-sm' : ''}`}
-                                onMouseEnter={() => setHoveredIndex(subIndex)} // Set the hovered index
-                                onMouseLeave={() => setHoveredIndex(null)} // Reset on mouse leave
+                                className={`cursor-pointer mx-1 border rounded-xl ${selectedIndex === subIndex ? 'filter blur-sm' : ''}`}
                                 onClick={() => {
-                                    setSelectedIndex(subIndex); // Set selected on click
-                                    setHoveredIndex(null); // Reset hover on click
+                                    if (selectedIndex === subIndex) {
+                                        // If the clicked sticker is already selected, reset
+                                        setSelectedIndex(null); // Unselect and revert to default
+                                    } else {
+                                        setSelectedIndex(subIndex); // Set selected on click
+                                    }
                                 }} 
+                                onMouseLeave={() => setHoveredIndex(null)} // Reset on mouse leave
                             >
                                     <Image      
                                         src={image}
