@@ -23,7 +23,7 @@ const WebDesign = () => {
           className='mt-[-45%] ml-[5%]'
         />
        </div>
-    <div className='items-center justify-center'>
+    <div className='items-center justify-center max-container'>
       <div className=' relative flex flex-col items-center justify-center lg:items-end lg:justify-end gap-12'>
       <h2 className='font-black text-[145px] text-center lg:text-[384px] web-gradient w-full lg:w-auto'>WEB</h2>
       <p className='absolute left-1/2 transform -translate-x-1/2 font-black text-[62px] text-center z-10 text-white lg:text-[152px] w-full lg:w-auto lg:left-auto lg:right-0 lg:transform-none lg:text-right lg:top-[calc(47%+50px)] top-[calc(35%+50px)]'>
