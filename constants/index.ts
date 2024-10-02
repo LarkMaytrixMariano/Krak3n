@@ -36,20 +36,20 @@ export const NAV_LINKS = [
     {
       title: 'Services',
       links: [
-        'Web Design',
-        'Press Releases',
-        'Stickers',
-        'NFTs',
+        {name:'Web Design', href:'/WebDesign' },
+        {name:'Press Releases', href: '/'},
+        {name:'Stickers', href:'/Stickers'},
+        {name:'NFTs', href:'/NFT'},
       ],
     },
     {
       title: 'Work Samples',
       links: [
-        'NFTs',
-        'Stickers',
-        'Web Designs',
-        'Marketing',
-        'Branding'],
+        {name:'NFTs', href:'/NFT'},
+        {name:'Stickers', href:'/Stickers'},
+        {name:'Web Designs', href:'/WebDesign' },
+        {name:'Marketing', href:'/'},
+        {name:'Branding', href:'/'}],
     },
   ];
   

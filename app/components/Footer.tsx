@@ -46,9 +46,11 @@ const Footer = () => {
                 <span className='text-white mb-[-50px] pt-4 displaynone'>krakengfxweb3@gmail.com</span>
               </li>
               <li className='pt-2'>
+                <Link href="/Contact">
                 <button className='text-white border rounded-lg border-white border-solid w-48 h-10 max-md:w-28 max-md:text-xs'>
                   Contact Us
                 </button>
+                </Link>
               </li>
             </ul>
           </div>
@@ -76,10 +78,10 @@ const Footer = () => {
           {FOOTER_LINKS.map((columns) => (
             <FooterColumn title={columns.title} key={columns.title}>
               <ul className='flex flex-col gap-4'>
-                {columns.links.map((link) => (
-                  <li key={link}>
-                    <Link href="/">
-                      {link}
+                {columns.links.map(({ name, href }) => (
+                  <li key={name}>
+                    <Link href={href}>
+                      {name}
                     </Link>
                   </li>
                 ))}
