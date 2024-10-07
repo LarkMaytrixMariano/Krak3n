@@ -1,11 +1,36 @@
+"use client"; // This makes the component a client component
 import { BUBBLES_NFT, PEOPLE_URL } from '@/constants'
 import Image from 'next/image'
 import React from 'react'
+import {motion, Variants} from 'framer-motion'
 
+
+// Function to create randomized bubble animation variants
+const createRandomBubbleVariants = () => {
+  const duration = Math.random() * 3 + 1; // Random duration between 1 and 4 seconds
+  const offset = Math.random() * 10 + 5; // Random offset between 5 and 25 pixels
+
+  return {
+    initial: { y: offset },
+    animate: {
+      y: [offset, -offset],
+      transition: {
+        duration,
+        ease: "linear",
+        repeat: Infinity,
+        repeatType: "reverse",
+      } as const, // Adding 'as const' ensures TypeScript treats this as a literal type
+    },
+  };
+}
 const Nft = () => {
   return (
     <section className='relative max-container padding-container flexCenter flex-col items-center justify-center lg:mt-[5%] mt-[30%]' id="Nfts">
-      <div className='flex flex-col items-center justify-center gap-12'>
+      <motion.div 
+                                 whileInView={{ opacity: 1 , x:0 }}
+                                 initial={{opacity: 0 , x: -100 }}
+                                 transition={{ duration: 1.5 }}
+      className='flex flex-col items-center justify-center gap-12'>
           <Image 
           src="/nftMint.svg"
           alt="NFT"
@@ -47,39 +72,50 @@ const Nft = () => {
           </div>
         <h1 className='font-black text-[145px] text-center lg:text-[384px] web-gradient w-full lg:w-auto z-20 mt-[-50%]'>NFTs</h1>
         <div className="absolute  w-[30%] h-[20%] left-[calc(60%+10px)] top-[calc(50%+50px)] white__gradient z-[-2]"/>
-      </div>
+      </motion.div>
       <div className=' items-center justify-center  mt-[3%]  lg:mt-[5%] lg:items-center lg:text-center'>
-          <div className='flex items-start justify-start lg:justify-start lg:items-start'>
+          <motion.div 
+                                          whileInView={{ opacity: 1, x:0 }}
+                                          initial={{opacity: 0 , x: 100}}
+                                          transition={{ duration: 1.5 }}
+          className='flex items-start justify-start lg:justify-start lg:items-start'>
             <p className='font-normal text-[16px] lg:text-[24px] text-white text-center leading-8 px-4 lg:text-center '>
             We believe that NFT creation is more than just about the art. It's also about creating a unique and <br className='hidden lg:block'/> engaging experience for your collectors. We're here to help you create an NFT collection that <br className='hidden lg:block'/> stands out from the crowd and delivers a truly unforgettable experience for your community and <br className='hidden lg:block'/> holders.
             </p>
-          </div>
+          </motion.div>
         </div>
       <div className=' mt-10'>
           {/* Left Side: Grid of images */}
-          <div className='flex flex-row'>
-            {BUBBLES_NFT.map((url, index) => (
-              <div className='' key={index}>
-              <Image 
-                className='rounded-full lg:h-[218px] lg:w-[218px]'
-                src={url}
-                key={url}
-                alt="bubbles"
-                width={215}
-                height={226}
-              />
-              <Image
-                src="/bubbleWrap.png"
-                alt="bubblewrap"
-                width={200}
-                height={210}
-                className='mt-[-101%] lg:mt-[-95%] ml-[1%] lg:ml-[5%]'
-              />
-              </div>
-            ))
-            
-            }
-          </div>
+          <motion.div className='flex flex-row'>
+    {BUBBLES_NFT.map((url, index) => {
+      const bubbleVariants = createRandomBubbleVariants(); // Create random variants for each bubble
+
+      return (
+        <motion.div 
+          className='' 
+          key={index} 
+          variants={bubbleVariants}
+          initial="initial"
+          animate="animate"
+        >
+          <Image 
+            className='rounded-full lg:h-[218px] lg:w-[218px]'
+            src={url}
+            alt="bubbles"
+            width={215}
+            height={226}
+          />
+          <Image
+            src="/bubbleWrap.png"
+            alt="bubblewrap"
+            width={200}
+            height={210}
+            className='mt-[-101%] lg:mt-[-95%] ml-[1%] lg:ml-[5%]'
+          />
+        </motion.div>
+      );
+    })}
+  </motion.div>
             <div className='flex flex-1 items-center lg:justify-center justify-center mt-[10%] lg:mt-[5%]'>
             <button className='text-end flex justify-end items-end btn-white btn-shadow '>
               <p className='text-end flex justify-end items-end'>Sea more Samples</p>
