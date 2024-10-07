@@ -68,7 +68,7 @@ const WebDesign = () => {
       />
             </motion.div>
 
-        <div className="absolute z-[0] w-[40%] h-[50%] left-[calc(15%+10px)] top-[calc(58%+50px)] white__gradient"/>
+        <div className="absolute z-[-1] w-[40%] h-[50%] left-[calc(15%+10px)] top-[calc(58%+50px)] white__gradient"/>
         </div>
         <motion.div 
                       whileInView={{ opacity: 1, x:0 }}
