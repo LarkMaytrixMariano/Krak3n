@@ -9,16 +9,17 @@ const Sticker = () => {
       <div className='lg:hidden z-30 absolute'>
        <Image 
           src="/stickerBg.svg" alt="bubbles" width={1440} height={1440}
-          className='mb-[135%] ml-[15%]'
+          className='mb-[160%] ml-[15%]'
         />
        </div>
+       <div className="absolute z-[-1] w-[30%] h-[50%] left-[calc(60%+10px)] top-[calc(50%+50px)] white__gradient"/>
        <div className='lg:absolute z-30 hidden lg:block'>
        <Image 
           src="/stickerBg2.svg" alt="bubbles" width={1440} height={1440}
-          className='mt-[-4%] ml-[10%]'
+          className='mt-[-1%] ml-[5%]' 
         />
        </div>
-        <h2 className='font-black text-[74px] text-center lg:text-[264px] web-gradient w-full lg:w-auto'>STICKERS</h2>
+        <h2 className='font-black text-[90px] text-center lg:text-[304px] web-gradient w-full lg:w-auto'>MEMES</h2>
         <div className='grid grid-cols-2'>
           {/* Left Side: Grid of images */}
           <div className='grid grid-cols-2 lg:flex lg:flex-nowrap lg:mt-[37%] mt-[-25%] '>
@@ -34,7 +35,7 @@ const Sticker = () => {
             ))}
           </div>
           {/* Right Side: Leader sticker */}
-          <div className='absolute top-[calc(3%+10px)] lg:top-[calc(15%+10px)] left-[calc(30%+10px)] lg:left-[calc(50%+10px)] '>
+          <div className='absolute top-[calc(8%+10px)] lg:top-[calc(15%+10px)] left-[calc(30%+10px)] lg:left-[calc(50%+10px)] '>
             <Image 
               src="/stickerleader.svg"
               alt="mainsticker"

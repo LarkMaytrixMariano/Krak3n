@@ -31,6 +31,7 @@ const Footer = () => {
       <div className='flex flex-row items-start justify-center gap-[10%] pb-10'>
         <div className='flex flex-col gap-2 basis-1/2 footernav max-md:basis-1/4' id='div1'>
           <div className='flex flex-row'>
+          <div className="absolute z-[-2] w-[20%] h-[30%] left-[calc(5%+10px)] top-[calc(30%+50px)] white__gradient"/>
             <ul>
               <li className='mb-5 displaynone'>
                 <Link href="/">
@@ -54,6 +55,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+          <div className="absolute z-[-2] w-[20%] h-[30%] right-[calc(5%+10px)] top-[calc(30%+50px)] white__gradient"/>
           <div className='flex flex-col gap-5 mt-10 md:mt-5 text-white max-md:text-xs max-md:mt-0 mobilefont'>
             <FooterColumn title={SOCIALS.title}>
               <ul className='flex gap-4 pb-5 max-lg:gap-2'>
