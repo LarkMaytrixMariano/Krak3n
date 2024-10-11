@@ -64,7 +64,7 @@ const Sticker = () => {
           initial="initial"
           animate="animate"
           variants={variants}
-          className='flex items-center lg:justify-start justify-center z-50  lg:mt-[-10%] mt-[5%] ml-'>
+          className='flex items-center lg:justify-start justify-center z-50  lg:mt-[-10%] mt-[5%] ml-4'>
           <Link href='/Stickers' className='z-1000'>
             <button className='text-start flex justify-start items-start btn-white btn-shadow z-50'>
               <p className='text-end flex justify-end items-end'>Sea more Samples</p>
