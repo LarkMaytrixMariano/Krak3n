@@ -29,7 +29,7 @@ const Footer = () => {
       </div>
       <div className='border sm:border-2 bg-gray-20 mb-10'/>
       <div className='flex items-start justify-center gap-[10%] pb-10'>
-        <div className='flex flex-col gap-2 basis-1/2 footernav max-sm:pr-10 ' id='div1'>
+        <div className='flex flex-col gap-2 basis-1/2 footernav' id='div1'>
           <div className='flex flex-row'>
             <div className="absolute z-[-2] w-[15%] h-[30%] left-[calc(5%+10px)] top-[calc(30%+50px)] white__gradient"/>
             <ul>
@@ -48,7 +48,7 @@ const Footer = () => {
               </li>
               <li className='pt-3 max-sm:pt-0 px-auto '>
                 <Link href="/Contact">
-                <button className='text-white rounded-xl  w-56 h-10 lg:h-[45px] max-lg:w-44 max-md:w-28 max-md:text-xs contact__gradient'>
+                <button className='text-white rounded-xl w-56 h-10 lg:h-[45px] max-lg:w-44 max-md:w-28 max-md:text-xs contact__gradient'>
                   CONTACT US
                 </button>
                 </Link>
