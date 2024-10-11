@@ -12,12 +12,12 @@ const Footer = () => {
   const isContactPage = pathname === '/Contact'; // Adjust this based on your contact page route
 
   return (
-    <footer className='relative overflow-hidden pt-[32%] z-[30]'>
-    <div className='absolute inset-0 md:bg-bg-img-3 max-lg:bg-bg-img-5 bg-cover bg-no-repeat bg-bottom z-[-1]'>
+    <footer className='relative overflow-hidden pt-[30%] lg:pt-[17%] z-[30]'>
+    <div className='absolute inset-0 md:bg-bg-img-3 max-lg:bg-bg-img-5 bg-cover bg-no-repeat bg-bottom z-[-1] '>
     </div> 
   
-    <div className='max-w-[1400px] mx-auto px-[10%] max-md:m-0 max-md:p-3'>
-      <div className='pb-5 krakendisplay'>
+    <div className='max-w-[1400px] mx-auto px-[10%] lg:px-[10%]  max-md:m-0 max-md:p-3 mb-[5%] '>
+    <div className='pb-5 krakendisplay'>
         <Link href="/">
           <Image 
           src="/Kraken_GFX.png"
@@ -92,9 +92,9 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className='text-center pb-7 max-md:text-xs max-sm:pb-1'>
-        <span className='text-[#DFFAFF] '>&#169; 2024 KRAKEN | All rights reserved </span>
-      </div>
+    </div>
+    <div className='text-center pb-7 max-md:text-xs max-sm:pb-1'>
+    <span className='text-[#DFFAFF] '>&#169; 2024 KRAKEN | All rights reserved </span>
     </div>
   </footer>  
   )
