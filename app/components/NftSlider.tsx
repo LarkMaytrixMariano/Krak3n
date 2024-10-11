@@ -17,7 +17,7 @@ const EmblaCarousel = () => {
 
     return (
         <div className="embla displaynone lg:w-[1015px] w-[420px]">
-            <div className="embla__viewport shadow-xl bg-[#EEF4F420]" ref={emblaRef}>
+            <div className="embla__viewport shadow-xl slider_background" ref={emblaRef}>
                 <div className='embla__container'>
                     {NFTslide.map((sticker, index) => (
                         <div className="embla__slide lg:flex lg:flex-row rounded-xl px-10 py-[9%] lg:py-[7%] my-5 text-sm lg:w-[1000px] w-[420px]" key={index}>

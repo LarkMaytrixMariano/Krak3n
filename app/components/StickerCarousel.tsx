@@ -10,7 +10,7 @@ const NextJsCarousel = () => {
     const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
     return (
-        <div className="bg-[#EEF4F4] bg-opacity-15 rounded-xl px-[5%] text-sm shadow-xl lg:w-[1000px] w-[380px] carousel2 md:w-[420px]">
+        <div className="slider_background rounded-xl px-[5%] text-sm shadow-xl lg:w-[1000px] w-[380px] carousel2 md:w-[420px]">
             <Carousel
                 showArrows={false}
                 showStatus={false}

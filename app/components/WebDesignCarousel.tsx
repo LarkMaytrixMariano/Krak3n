@@ -6,7 +6,7 @@ import { WebDesignCard } from '@/constants'
 
 const NextJsCarousel = () => {
     return (
-        <div className="bg-[#EEF4F4] bg-opacity-15 rounded-xl px-10 text-sm shadow-xl lg:w-[1000px] w-[380px] py-10 carousel2">
+        <div className="slider_background rounded-xl px-10 text-sm shadow-xl lg:w-[1000px] w-[380px] py-10 carousel2">
             <Carousel
                 showArrows={false}
                 showStatus={false}

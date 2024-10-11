@@ -28,6 +28,12 @@ body {
   box-shadow: 0 4px 2px rgba(0, 35, 41, 0.32); /* Drop shadow */
 }
 
+.slider_background {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.65) 0%, rgba(84, 195, 237, 0) 100%);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(8px)
+}
+
 
 .white__gradient {
   background: radial-gradient(circle, #00c0fa 0%, #d6f3ffb2 100%);

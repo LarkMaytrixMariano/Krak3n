@@ -107,8 +107,8 @@ type FooterColumnProps = {
 
 const FooterColumn = ({ title, children }: FooterColumnProps) => {
   return(
-    <div className='flex flex-col gap-2'>
-      <h4 className='font-semibold text-[12px] whitespace-nowrap max-lg:bold-15'>{title}</h4>
+    <div className='flex flex-col gap-5'>
+      <h4 className='bold-18 whitespace-nowrap max-lg:bold-16'>{title}</h4>
       {children}
     </div>
   )
