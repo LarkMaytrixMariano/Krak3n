@@ -3,6 +3,7 @@ import { BUBBLES_NFT, PEOPLE_URL } from '@/constants'
 import Image from 'next/image'
 import React from 'react'
 import {motion, Variants} from 'framer-motion'
+import Link from 'next/link';
 
 
 // Function to create randomized bubble animation variants
@@ -23,7 +24,28 @@ const createRandomBubbleVariants = () => {
     },
   };
 }
+
+// Define the function with explicit types
+const createIconVariants = (duration: number, offset: number): Variants => ({
+  initial: { y: offset },
+  animate: {
+    y: [offset, -offset],
+    transition: {
+      duration: duration,
+      ease: "linear" as const, // Type assertion to specify the exact type
+      repeat: Infinity,
+      repeatType: "reverse" as const, // Type assertion to specify the exact type
+    },
+  },
+});
+
+// You can define your duration and offset here
+const duration: number = 1; // Change this to your desired duration
+const offset: number = 5; // Change this to your desired offset
+
 const Nft = () => {
+  const variants = createIconVariants(duration, offset);
+
   return (
     <section className='relative max-container padding-container flexCenter flex-col items-center justify-center lg:mt-[5%] mt-[30%]' id="Nfts">
       <motion.div 
@@ -76,17 +98,21 @@ const Nft = () => {
       <div className=' items-center justify-center  mt-[3%]  lg:mt-[5%] lg:items-center lg:text-center'>
           <motion.div 
                                           whileInView={{ opacity: 1, x:0 }}
-                                          initial={{opacity: 0 , x: 100}}
+                                          initial={{opacity: 0 , x: -100}}
                                           transition={{ duration: 1.5 }}
           className='flex items-start justify-start lg:justify-start lg:items-start'>
-            <p className='font-normal text-[16px] lg:text-[24px] text-white text-center leading-8 px-4 lg:text-center '>
+            <p className='font-normal text-[16px] lg:text-[24px] text-white text-center leading-8 lg:leading-[50px] px-4 lg:text-center '>
             We believe that NFT creation is more than just about the art. It's also about creating a unique and <br className='hidden lg:block'/> engaging experience for your collectors. We're here to help you create an NFT collection that <br className='hidden lg:block'/> stands out from the crowd and delivers a truly unforgettable experience for your community and <br className='hidden lg:block'/> holders.
             </p>
           </motion.div>
         </div>
       <div className=' mt-10'>
           {/* Left Side: Grid of images */}
-          <motion.div className='flex flex-row'>
+          <motion.div 
+                      whileInView={{ opacity: 1, x:0 }}
+                      initial={{opacity: 0 , x: -100}}
+                      transition={{ duration: 1.5 }}
+          className='flex flex-row'>
     {BUBBLES_NFT.map((url, index) => {
       const bubbleVariants = createRandomBubbleVariants(); // Create random variants for each bubble
 
@@ -116,11 +142,18 @@ const Nft = () => {
       );
     })}
   </motion.div>
-            <div className='flex flex-1 items-center lg:justify-center justify-center mt-[10%] lg:mt-[5%]'>
-            <button className='text-end flex justify-end items-end btn-white btn-shadow '>
+            <motion.div 
+                                  initial="initial"
+                                  animate="animate"
+                                  variants={variants}            
+            className='flex flex-1 items-center lg:justify-center justify-center mt-[10%] lg:mt-[5%] mb-2'>
+            <Link href='/NFT' className='z-50'>
+            <button 
+            className='text-end flex justify-end items-end btn-white btn-shadow'>
               <p className='text-end flex justify-end items-end'>Sea more Samples</p>
             </button>
-          </div>
+            </Link>
+          </motion.div>
         </div>
     </section>
   )

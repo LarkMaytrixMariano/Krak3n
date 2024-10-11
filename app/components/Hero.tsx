@@ -39,8 +39,8 @@ const Hero = () => {
       <Image 
         src="/krakenlogo.svg" alt="logo" width={197} height={224} className='mt-10 lg:hidden flex'
       />
-      </motion.div>
       <Parallax />  
+      </motion.div>
       <motion.div 
               whileInView={{ opacity: 1 , x:0 }}
               initial={{opacity: 0 , x: -100 }}
@@ -61,7 +61,7 @@ const Hero = () => {
       >
       <div    
       className='mt-7 rounded-[8px] border-gradient h-[42px] w-[168px] text-center justify-center flex button__gradient '>
-        <Link href="/Contact">
+        <Link href="/Contact" passHref>
         <button className='font-inter font-semibold text-[16px] text-herocolor mt-2'>Let's Connect</button>
         </Link>
       </div>

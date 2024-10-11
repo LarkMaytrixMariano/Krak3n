@@ -47,7 +47,7 @@ module.exports = {
          'bg-img-2': "url('/Component 1.png')",
          'bg-img-3': "url('/footerBackground.png')",
          'bg-img-4': "url('/BG.png')",
-         'bg-img-5': "url('/BGFooterMobile.svg')",
+         'bg-img-5': "url('/FooterMobile.png')",
          'bg-img-6': "url('/bubblesBg.png')",
          'bg-img-7': "url('/bubblesBg2.png')"
         // 'feature-bg': "url('/feature-bg.png')",

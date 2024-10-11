@@ -2,7 +2,7 @@
 export const NAV_LINKS = [
     { href: '/Contact', key: 'contact_us', label: 'Contact Us' },
     { href: '/WebDesign', key: 'web_design', label: 'Web Designs' },
-    { href: '/Stickers', key: 'sticker', label: 'Stickers' },
+    { href: '/Stickers', key: 'sticker', label: 'Memes' },
     { href: '/NFT', key: 'nft', label: 'NFTs' },
   ];
 
@@ -54,7 +54,7 @@ export const NAV_LINKS = [
   ];
   
   export const SOCIALS = {
-    title: 'Lets Chat',
+    title: 'Lets Chat!',
     links: [
       '/TG ICON.png',
       '/DISCORD ICON.png',
