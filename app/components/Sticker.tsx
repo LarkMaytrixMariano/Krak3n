@@ -46,7 +46,7 @@ const Sticker = () => {
         <div className='lg:absolute z-30 hidden lg:block pointer-events-none '>
           <Image
             src="/stickerBg2.svg" alt="bubbles" width={1440} height={1440}
-            className='mt-[-1%] ml-[5%]'
+            className='mt-[2%] ml-[5%]'
           />
         </div>
         <motion.h2 

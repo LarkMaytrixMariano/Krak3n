@@ -48,7 +48,7 @@ const Footer = () => {
               </li>
               <li className='pt-3 max-sm:pt-0 px-auto '>
                 <Link href="/Contact">
-                <button className='text-white rounded-xl  w-56 h-[45px] max-lg:w-44 max-md:w-28 max-md:text-xs contact__gradient'>
+                <button className='text-white rounded-xl  w-56 h-10 lg:h-[45px] max-lg:w-44 max-md:w-28 max-md:text-xs contact__gradient'>
                   CONTACT US
                 </button>
                 </Link>
