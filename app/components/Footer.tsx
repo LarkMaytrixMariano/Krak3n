@@ -29,7 +29,7 @@ const Footer = () => {
       </div>
       <div className='border sm:border-2 bg-gray-20 mb-10'/>
       <div className='flex items-start justify-center gap-[10%] pb-10'>
-        <div className='flex flex-col gap-2 basis-1/2 footernav' id='div1'>
+        <div className='flex flex-col gap-2 basis-1/2 footernav max-lg:basis-1/3' id='div1'>
           <div className='flex flex-row'>
             <div className="absolute z-[-2] w-[15%] h-[30%] left-[calc(5%+10px)] top-[calc(30%+50px)] white__gradient"/>
             <ul>
@@ -56,7 +56,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="absolute z-[-2] w-[15%] h-[30%] right-[calc(5%+10px)] top-[calc(30%+50px)] white__gradient"/>
-          <div className='flex flex-col gap-5 mt-10 md:mt-5 text-white max-lg:text-xs max-md:mt-1 mobilefont '>
+          <div className='flex flex-col gap-5 mt-10 md:mt-5 text-white max-lg:text-xs max-md:mt-1'>
             <FooterColumn title={SOCIALS.title}>
               <ul className='flex gap-3 pb-5 max-lg:gap-2 max-sm:pb-0'>
                 {SOCIALS.links.map((link) => (
@@ -76,7 +76,7 @@ const Footer = () => {
           </div>
         </div>
   
-        <div className='flex flex-wrap gap-10 sm:justify-evenly md:flex-1 text-[#DFFAFF] font-inter basis-1/4 mb-5 max-md:gap-6 max-lg:text-xs max-lg:basis-3/4 max-sm:text-[11px]' id='div2'>
+        <div className='flex flex-wrap gap-10 sm:justify-evenly md:flex-1 text-[#DFFAFF] font-inter basis-1/4 mb-5 max-md:gap-6 max-lg:text-xs max-lg:basis-2/3 max-sm:text-[12px]' id='div2'>
           {FOOTER_LINKS.map((columns) => (
             <FooterColumn title={columns.title} key={columns.title}>
               <ul className='flex flex-col gap-4'>
@@ -108,7 +108,7 @@ type FooterColumnProps = {
 const FooterColumn = ({ title, children }: FooterColumnProps) => {
   return(
     <div className='flex flex-col gap-5'>
-      <h4 className='bold-18 whitespace-nowrap max-sm:text-[12px]'>{title}</h4>
+      <h4 className='bold-18 whitespace-nowrap max-sm:text-[13px]'>{title}</h4>
       {children}
     </div>
   )
