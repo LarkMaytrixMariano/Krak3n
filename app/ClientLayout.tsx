@@ -23,7 +23,7 @@ const ClientLayout: React.FC<ClientLayoutProps> = ({ children }) => {
       {positions.map((pos, index) => (
         <motion.div
           key={index}
-          className="absolute top-[-5%] -translate-x-1/2 h-[90%] lg:h-[120%] bg-gradient-to-b from-[#ffffff] to-transparent opacity-20 z-[10000] white__gradient"
+          className="absolute top-[-5%] -translate-x-1/2 h-[60%] lg:h-[120%] bg-gradient-to-b from-[#ffffff] to-transparent opacity-20 z-[10000] white__gradient"
           style={{
             width: '200px',
             clipPath: 'polygon(0% 0%, 40% 0%, 50% 100%, 45% 100%)',
