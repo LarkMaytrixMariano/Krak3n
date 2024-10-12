@@ -291,10 +291,18 @@ body {
   }
 }
 
-@media (max-width:360px)
+@media (max-width:390px)
 {
-  .mobilefont {
-    font-size: 8px;
+  .carousel_width {
+    width: 350px;
+  }
+}
+
+@media (max-width:390px)
+{
+  .carousel_padding {
+    margin-right: 15px;
+    margin-left: -15px;
   }
 }
 

@@ -10,7 +10,7 @@ const NextJsCarousel = () => {
     const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
     return (
-        <div className="slider_background rounded-xl px-[5%] text-sm shadow-xl lg:w-[1000px] w-[380px] carousel2 md:w-[420px]">
+        <div className="slider_background rounded-xl px-[5%] text-sm shadow-xl lg:w-[1000px] w-[380px] carousel2 md:w-[420px] carousel_width">
             <Carousel
                 showArrows={false}
                 showStatus={false}
@@ -23,7 +23,7 @@ const NextJsCarousel = () => {
                         <div className="px-10 pt-[9%] w-[340px] mb-10" key={index}
                         onMouseLeave={() => setSelectedIndex(null)} // Reset on mouse leave
                         >
-                            <div className='mx-auto flex'>
+                            <div className='mx-auto flex carousel_padding'>
                                 <Image
                                     src={selectedIndex !== null && sticker.sub[selectedIndex] ? sticker.sub[selectedIndex] : sticker.main } // Provide a default image path
                                     alt="webdesign" 
@@ -32,7 +32,7 @@ const NextJsCarousel = () => {
                                     className="pb-10"
                                 />
                             </div>
-                            <div className='flex mx-auto'>
+                            <div className='flex mx-auto carousel_padding'>
                             {sticker.sub.map((image, subIndex) => (
                                 <div 
                                 key={subIndex} 
