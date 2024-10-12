@@ -52,14 +52,14 @@ const WebDesign = () => {
         />
       </motion.div>
       <div className='items-center justify-center max-container'>
-        <div className=' relative flex flex-col items-center justify-center lg:items-end lg:justify-end gap-12'>
+        <div className=' relative flex flex-col items-center justify-center lg:items-end lg:justify-end gap-12 mt-10'>
           <motion.div
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 1.5 }}
           >
             <h2 className='font-black text-[120px] text-center lg:text-[384px] web-gradient w-full lg:w-auto'>WEB</h2>
-            <p className='absolute left-1/2 transform -translate-x-1/2 font-black text-[62px] text-center z-10 text-white lg:text-[152px] w-full lg:w-auto lg:left-auto lg:right-0 lg:transform-none lg:text-right lg:top-[calc(47%+50px)] top-[calc(35%+50px)]'>
+            <p className='absolute left-1/2 transform -translate-x-1/2 font-black text-[57px] text-center z-10 text-white lg:text-[152px] w-full lg:w-auto lg:left-auto lg:right-0 lg:transform-none lg:text-right lg:top-[calc(47%+50px)] top-[calc(25%+50px)]'>
               DESIGNS
             </p>
             <Image
@@ -67,7 +67,7 @@ const WebDesign = () => {
               alt="laptop"
               width={390}
               height={418}
-              className='absolute z-20 top-[calc(58%+50px)] lg:top-[calc(40%+80px)] lg:left-[calc(-30%+10px)] lg:w-[600px] lg:h-[500px] lg:rotate-[20deg]'
+              className='absolute z-20 top-[calc(47%+50px)] left-[calc(4%+10px)] lg:top-[calc(40%+80px)] lg:left-[calc(-30%+10px)] lg:w-[600px] lg:h-[500px] lg:rotate-[20deg]'
             />
           </motion.div>
 
@@ -77,7 +77,7 @@ const WebDesign = () => {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 1.5 }}
-          className='items-center justify-center pt-[70%] lg:pt-[0.5%]'>
+          className='items-center justify-center pt-[40%] lg:pt-[0.5%]'>
           <div className='flex items-center justify-center lg:justify-end lg:items-end'>
             <p className='font-normal text-[16px] lg:text-[24px] text-white text-center leading-8 lg:leading-[50px] px-4 lg:text-end lg:w-[50%] w-[100%] pt-15'>
               We don’t just design, we craft digital
@@ -93,7 +93,7 @@ const WebDesign = () => {
           initial="initial"
           animate="animate"
           variants={variants}
-          className='flex flex-1 items-center lg:justify-end mt-4 justify-center m-4'>
+          className='flex flex-1 items-center lg:justify-end mt-[25px] justify-center m-4'>
           <Link href='/WebDesign' className='z-50'>
             <button className='text-end flex justify-end items-end btn-white btn-shadow'>
               <p className='text-end flex justify-end items-end '>Sea more Samples</p>

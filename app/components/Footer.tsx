@@ -13,7 +13,7 @@ const Footer = () => {
 
   return (
     <footer className='relative overflow-hidden pt-[30%] lg:pt-[17%] z-[30]'>
-    <div className='absolute inset-0 md:bg-bg-img-3 max-lg:bg-bg-img-5 bg-cover bg-no-repeat bg-bottom z-[-1] '>
+    <div className='absolute inset-0 md:bg-bg-img-3 max-lg:bg-bg-img-5 bg-cover bg-no-repeat bg-bottom z-[-2] '>
     </div> 
   
     <div className='max-w-[1400px] mx-auto px-[10%] lg:px-[10%]  max-md:m-0 max-md:p-3 mb-[5%] '>
@@ -29,7 +29,7 @@ const Footer = () => {
       </div>
       <div className='border sm:border-2 bg-gray-20 mb-10'/>
       <div className='flex items-start justify-center gap-[10%] pb-10'>
-        <div className='flex flex-col gap-2 basis-1/2 footernav max-sm:pr-10 ' id='div1'>
+        <div className='flex flex-col gap-2 basis-1/2 footernav' id='div1'>
           <div className='flex flex-row'>
             <div className="absolute z-[-2] w-[15%] h-[30%] left-[calc(5%+10px)] top-[calc(30%+50px)] white__gradient"/>
             <ul>
@@ -76,7 +76,7 @@ const Footer = () => {
           </div>
         </div>
   
-        <div className='flex flex-wrap gap-10 sm:justify-evenly md:flex-1 text-[#DFFAFF] font-inter basis-1/4 mb-5 max-md:gap-6 max-lg:text-xs max-lg:basis-3/4 max-sm:text-[9px]' id='div2'>
+        <div className='flex flex-wrap gap-10 sm:justify-evenly md:flex-1 text-[#DFFAFF] font-inter basis-1/4 mb-5 max-md:gap-6 max-lg:text-xs max-lg:basis-3/4 max-sm:text-[11px]' id='div2'>
           {FOOTER_LINKS.map((columns) => (
             <FooterColumn title={columns.title} key={columns.title}>
               <ul className='flex flex-col gap-4'>
@@ -108,7 +108,7 @@ type FooterColumnProps = {
 const FooterColumn = ({ title, children }: FooterColumnProps) => {
   return(
     <div className='flex flex-col gap-5'>
-      <h4 className='bold-18 whitespace-nowrap max-lg:bold-16'>{title}</h4>
+      <h4 className='bold-18 whitespace-nowrap max-sm:text-[12px]'>{title}</h4>
       {children}
     </div>
   )
