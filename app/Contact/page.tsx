@@ -3,12 +3,12 @@ import Footer from "../components/Footer";
 
 const Contact = () => {
   return (
-    <div className='items-center justify-center '>
+    <div className='items-center justify-center'>
       <div>
-          <h1 className='font-black lg:text-[100px] kraken-gradient text-[70px] max-sm:text-[50px]'>HAPPY TO CONNECT</h1>
+          <h1 className='font-black lg:text-[85px] kraken-gradient text-[70px] max-sm:text-[50px]'>HAPPY TO CONNECT</h1>
       </div>  
       <div className="flex max-w-[1240px] mx-auto mt-1 justify-center">
-          <form className=" flex flex-col slider_background rounded-xl px-7 py-8 my-5   text-sm shadow-xl lg:w-[800px] w-[380px]" action=''>
+          <form className=" flex flex-col slider_background rounded-xl px-7 py-8 my-5   text-sm shadow-xl lg:w-[809px] w-[380px] carousel_width" action=''>
               <label className='text-[16px] leading-6 font-normal text-[#043F48] '>Email Address:</label>
               <input type="email" className="px-3 py-2 my-2 bg-custom rounded-lg" name="email"/>
               <label className='text-[16px] leading-6 font-normal text-[#043F48]'>Description:</label>
