@@ -298,11 +298,28 @@ body {
   }
 }
 
+@media (max-width:355px)
+{
+  .carousel_width {
+    width: 300px;
+  }
+}
+
+
 @media (max-width:390px)
 {
   .carousel_padding {
     margin-right: 15px;
     margin-left: -15px;
+  }
+}
+
+@media (max-width:355px)
+{
+  .carousel_padding {
+    margin-right: 15%;
+    margin-left: -15%;
+    padding: 2%;
   }
 }
 

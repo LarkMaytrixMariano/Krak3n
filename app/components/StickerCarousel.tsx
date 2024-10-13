@@ -36,7 +36,7 @@ const NextJsCarousel = () => {
                             {sticker.sub.map((image, subIndex) => (
                                 <div 
                                 key={subIndex} 
-                                className={`cursor-pointer mx-[2px] border-2 rounded-xl bg-[#038AA2] ${selectedIndex === subIndex ? 'filter blur-sm' : ''}`}
+                                className={`cursor-pointer mx-[2px] border-2 border-[#A2D6DE] rounded-xl bg-[#038AA2] ${selectedIndex === subIndex ? 'filter blur-sm' : ''}`}
                                 onClick={() => {
                                     if (selectedIndex === subIndex) {
                                         // If the clicked sticker is already selected, reset
