@@ -4,12 +4,18 @@ import { Carousel } from "react-responsive-carousel";
 import Image from 'next/image'
 import { NFTslide } from '@/constants'
 import { useState } from "react";
+import { motion, Variants } from 'framer-motion'
 
 const NextJsCarousel = () => {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
     const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
     return (
-        <div className="slider_background rounded-xl px-[5%] text-sm shadow-xl lg:w-[1000px] w-[380px] py-10 carousel2 md:w-[420px] carousel_width">
+        <motion.div 
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: -100 }}
+        transition={{ duration: 1.5 }}
+        viewport={{ once: true }}           
+        className="slider_background rounded-xl px-[5%] text-sm shadow-xl lg:w-[1000px] w-[380px] py-10 carousel2 md:w-[420px] carousel_width">
             <Carousel
                 showArrows={false}
                 showStatus={false}
@@ -28,6 +34,8 @@ const NextJsCarousel = () => {
                                 alt="webdesign" 
                                 height={308}
                                 width={514}
+                                priority={true}  // Preload key images
+                                loading="eager"  // Eager loading for faster display
                             />
                             </div>
                             <div className='flex justify-center mx-auto carousel_padding'>
@@ -48,9 +56,11 @@ const NextJsCarousel = () => {
                                     <Image      
                                         src={image}
                                         alt="stickers"
-                                        width={80} 
-                                        height={80}
+                                        width={60} 
+                                        height={60}
                                         className="rounded-xl p-[5px]"
+                                        loading="eager" // Preload all images to avoid delay
+                                        priority={true}  // Ensures this image is loaded first
                                     />
                                 </div>    
                             ))}    
@@ -58,7 +68,7 @@ const NextJsCarousel = () => {
                         </div>
                     ))}
             </Carousel>
-        </div>
+        </motion.div>
     );
 };
 

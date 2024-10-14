@@ -15,8 +15,8 @@ const Navbar = () => {
   
   return (
     <nav className='flexBetween max-container padding-container relative z-30 py-5 '>
-      <Link href="/">
-        <h1 className='font-black text-[36px] text-green-50 lg:hidden'>KRAKEN</h1>
+      <Link href="/" onClick={() => window.location.href = '/'}>
+      <h1 className='font-black text-[36px] text-green-50 lg:hidden'>KRAKEN</h1>
         <Image className='hidden lg:flex mt-5' src="/krakenlogo.svg" alt="logo" width={76} height={92}/>
       </Link>
       <ul className='hidden h-full gap-12 lg:flex'>

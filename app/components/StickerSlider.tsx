@@ -3,6 +3,7 @@ import React, { useCallback } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import { PEPESTICKERS } from '@/constants'
 import Image from 'next/image'
+import { motion, Variants } from 'framer-motion'
 
 const EmblaCarousel = () => {
     const [emblaRef, emblaApi] = useEmblaCarousel()
@@ -16,7 +17,12 @@ const EmblaCarousel = () => {
     }, [emblaApi])
 
     return (
-        <div className="embla displaynone lg:w-[1015px] w-[420px]">
+        <motion.div 
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: -100 }}
+        transition={{ duration: 1.5 }}
+        viewport={{ once: true }}  
+        className="embla displaynone lg:w-[1015px] w-[420px]">
             <div className="embla__viewport shadow-xl slider_background" ref={emblaRef}>
                 <div className='embla__container'>
                     {PEPESTICKERS.map((sticker, index) => (
@@ -66,7 +72,7 @@ const EmblaCarousel = () => {
                     </button>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

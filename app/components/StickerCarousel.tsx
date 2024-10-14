@@ -4,13 +4,19 @@ import { Carousel } from "react-responsive-carousel";
 import Image from 'next/image'
 import { STICKERSCAROUSEL } from '@/constants'
 import { useState } from "react";
+import { motion, Variants } from 'framer-motion'
 
 const NextJsCarousel = () => {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
     const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
     return (
-        <div className="slider_background rounded-xl px-[5%] text-sm shadow-xl lg:w-[1000px] w-[380px] carousel2 md:w-[420px] carousel_width">
+        <motion.div 
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: -100 }}
+        transition={{ duration: 1.5 }}
+        viewport={{ once: true }}  
+        className="slider_background rounded-xl px-[5%] text-sm shadow-xl lg:w-[1000px] w-[380px] carousel2 md:w-[420px] carousel_width">
             <Carousel
                 showArrows={false}
                 showStatus={false}
@@ -30,6 +36,8 @@ const NextJsCarousel = () => {
                                     height={400}
                                     width={450}
                                     className="pb-10"
+                                    loading="eager"  // Ensures images load eagerly
+                                    priority={true}  // Ensures this image is loaded 
                                 />
                             </div>
                             <div className='flex mx-auto carousel_padding'>
@@ -53,6 +61,7 @@ const NextJsCarousel = () => {
                                         width={80} 
                                         height={80}
                                         className="rounded-xl p-1"
+                                        loading="eager"  // Ensures images load eagerly
                                     />
                                 </div>    
                             ))}    
@@ -60,7 +69,7 @@ const NextJsCarousel = () => {
                         </div>
                     ))}
             </Carousel>
-        </div>
+        </motion.div>
     );
 };
 

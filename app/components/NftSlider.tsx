@@ -3,6 +3,7 @@ import React, { useCallback } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import { NFTslide } from '@/constants'
 import Image from 'next/image'
+import { motion, Variants } from 'framer-motion'
 
 const EmblaCarousel = () => {
     const [emblaRef, emblaApi] = useEmblaCarousel()
@@ -16,7 +17,12 @@ const EmblaCarousel = () => {
     }, [emblaApi])
 
     return (
-        <div className="embla displaynone lg:w-[1015px] w-[420px]">
+        <motion.div 
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: -100 }}
+        transition={{ duration: 1.5 }}
+        viewport={{ once: true }}   
+        className="embla displaynone lg:w-[1015px] w-[420px]">
             <div className="embla__viewport shadow-xl slider_background" ref={emblaRef}>
                 <div className='embla__container'>
                     {NFTslide.map((sticker, index) => (
@@ -27,6 +33,8 @@ const EmblaCarousel = () => {
                                 alt="webdesign"
                                 height={354}
                                 width={354} 
+                                loading="eager"  // Ensures images load eagerly
+                                priority={true}  // Ensures this image is loaded first
                             />
                             </div>  
                             <div className='ml-10 px-auto flex flex-wrap gap-10 items-center justify-center w-4/6'>
@@ -37,6 +45,7 @@ const EmblaCarousel = () => {
                                         alt="stickers"
                                         width={150}
                                         height={150}
+                                        loading="eager"  // Ensures images load eagerly
                                     />
                                 </div>
                             ))}    
@@ -52,6 +61,8 @@ const EmblaCarousel = () => {
                             height={10}
                             width={10}
                             className='mr-2 mt-1.5'
+                            loading="eager"  // Ensures images load eagerly
+
                         /> Prev
                     </button>
                     <button className="embla__next pl-3 mb-5 text-[#DFFAFF] flex" onClick={scrollNext}>
@@ -62,11 +73,12 @@ const EmblaCarousel = () => {
                             height={10}
                             width={10}
                             className='ml-2 mt-1.5'
+                            loading="eager"  // Ensures images load eagerly
                         />
                     </button>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

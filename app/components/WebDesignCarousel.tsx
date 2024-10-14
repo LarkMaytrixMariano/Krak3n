@@ -3,10 +3,34 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import Image from 'next/image'
 import { WebDesignCard } from '@/constants'
+import { motion, Variants } from 'framer-motion'
+// Define the function with explicit types
+const createIconVariants = (duration: number, offset: number): Variants => ({
+    initial: { y: offset },
+    animate: {
+      y: [offset, -offset],
+      transition: {
+        duration: duration,
+        ease: "linear" as const, // Type assertion to specify the exact type
+        repeat: Infinity,
+        repeatType: "reverse" as const, // Type assertion to specify the exact type
+      },
+    },
+  });
+  
+  // You can define your duration and offset here
+  const duration: number = 1; // Change this to your desired duration
+  const offset: number = 5; // Change this to your desired offset
 
 const NextJsCarousel = () => {
+    const variants = createIconVariants(duration, offset);
     return (
-        <div className="slider_background rounded-xl px-10 text-sm shadow-xl lg:w-[1000px] w-[380px] py-10 carousel2 carousel_width">
+        <motion.div 
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: -100 }}
+        transition={{ duration: 1.5 }}
+        viewport={{ once: true }}  
+        className="slider_background rounded-xl px-10 text-sm shadow-xl lg:w-[1000px] w-[380px] py-10 carousel2 carousel_width">
             <Carousel
                 showArrows={false}
                 showStatus={false}
@@ -33,14 +57,18 @@ const NextJsCarousel = () => {
                                     {link.description}
                                 </p>
                             </div>
-                            <div className='flex lg:justify-end justify-center'>
+                            <motion.div 
+                                               initial="initial"
+                                               animate="animate"
+                                               variants={variants}                            
+                            className='flex lg:justify-end justify-center'>
                                 <button className="w-[180px] rounded-lg bg-[#043F48] bg-opacity-90 text-[#DFFAFF] py-3 mt-8 font-medium leading-3 text-[14px]">Sea on Figma</button>
-                            </div>
+                            </motion.div>
                         </div>
                     </div>
                 ))}
             </Carousel>
-        </div>
+        </motion.div>
     );
 };
 

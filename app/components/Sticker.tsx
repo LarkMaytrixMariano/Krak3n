@@ -35,6 +35,7 @@ const Sticker = () => {
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 100 }}
             transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
           >
             <Image
               src="/stickerBg.svg" alt="bubbles" width={1440} height={1440}
@@ -53,11 +54,13 @@ const Sticker = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   initial={{ opacity: 0, x: 100 }}
                   transition={{ duration: 1.5 }}
+                  viewport={{ once: true }}
         className='font-black text-[90px] text-center lg:text-[360px] web-gradient w-full lg:w-auto'>MEMES</motion.h2>
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 100 }}
           transition={{ duration: 1.5 }}
+          viewport={{ once: true }}
           className='flex flex-col-reverse mt-[-20%] lg:flex lg:flex-col lg:mt-0'
         >
           <motion.div
@@ -75,6 +78,7 @@ const Sticker = () => {
                       whileInView={{ opacity: 1, x: 0 }}
                       initial={{ opacity: 0, x: 100 }}
                       transition={{ duration: 1.5 }}
+                      viewport={{ once: true }}
           className='items-center justify-center  lg:pt-[0.5%] lg:items-start lg:text-start'>
             <div
               className='flex items-start justify-start lg:justify-start lg:items-start'>

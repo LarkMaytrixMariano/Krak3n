@@ -35,16 +35,19 @@ const Hero = () => {
               whileInView={{ opacity: 1, y:0 }}
               initial={{opacity: 0 , y: -100}}
               transition={{ duration: 1.5 }}
+              viewport={{ once: true }}
       >
       <Image 
         src="/krakenlogo.svg" alt="logo" width={197} height={224} className='mt-10 lg:hidden flex'
       />
-      <Parallax />  
       </motion.div>
+      <Parallax />  
       <motion.div 
               whileInView={{ opacity: 1 , x:0 }}
               initial={{opacity: 0 , x: -100 }}
               transition={{ duration: 1.5 }}
+              viewport={{ once: true }}
+
       className='mt-10 flex flex-wrap'>
         <ul className='flex flex-wrap gap-1 items-center justify-center'>
           {NAV_LINKS2.map((link) => (

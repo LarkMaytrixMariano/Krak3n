@@ -3,8 +3,29 @@ import React, { useCallback } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import { WebDesignCard } from '@/constants'
 import Image from 'next/image'
+import { motion, Variants } from 'framer-motion'
+
+
+// Define the function with explicit types
+const createIconVariants = (duration: number, offset: number): Variants => ({
+    initial: { y: offset },
+    animate: {
+      y: [offset, -offset],
+      transition: {
+        duration: duration,
+        ease: "linear" as const, // Type assertion to specify the exact type
+        repeat: Infinity,
+        repeatType: "reverse" as const, // Type assertion to specify the exact type
+      },
+    },
+  });
+  
+  // You can define your duration and offset here
+  const duration: number = 1; // Change this to your desired duration
+  const offset: number = 5; // Change this to your desired offset
 
 const EmblaCarousel = () => {
+    const variants = createIconVariants(duration, offset);
     const [emblaRef, emblaApi] = useEmblaCarousel()
 
     const scrollPrev = useCallback(() => {
@@ -17,10 +38,17 @@ const EmblaCarousel = () => {
 
     return (
         <div className="embla displaynone lg:w-[928px] w-[420px]">
-            <div className="embla__viewport shadow-xl slider_background" ref={emblaRef}>
-                <div className='embla__container'>
+            <motion.div 
+                                                    whileInView={{ opacity: 1, x: 0 }}
+                                                    initial={{ opacity: 0, x: -100 }}
+                                                    transition={{ duration: 1.5 }}
+                                                    viewport={{ once: true }}  
+            className="embla__viewport shadow-xl slider_background" ref={emblaRef}>
+                <div 
+                className='embla__container'>
                     {WebDesignCard.map((link, index) => (
-                        <div className="embla__slide lg:flex lg:flex-row rounded-xl px-10 py-[9%] lg:py-[7%] my-5 text-sm lg:w-[1000px] w-[420px]" key={index}>
+                        <div   
+                        className="embla__slide lg:flex lg:flex-row rounded-xl px-10 py-[9%] lg:py-[7%] my-5 text-sm lg:w-[1000px] w-[420px]" key={index}>
                             <Image
                                 src={link.links}
                                 alt="webdesign"
@@ -37,9 +65,13 @@ const EmblaCarousel = () => {
                                         {link.description}
                                     </p>
                                 </div>
-                                <div className='flex lg:justify-end justify-center'>
+                                <motion.div 
+                                              initial="initial"
+                                              animate="animate"
+                                              variants={variants}  
+                                className='flex lg:justify-end justify-center'>
                                     <button className="w-[180px] rounded-lg bg-[#043F48] bg-opacity-90 text-[#DFFAFF] py-3 mt-8 font-medium leading-3 text-[14px]">Sea on Figma</button>
-                                </div>
+                                </motion.div>
                             </div>
                         </div>
                     ))}
@@ -65,7 +97,7 @@ const EmblaCarousel = () => {
                     />
                 </button>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }
