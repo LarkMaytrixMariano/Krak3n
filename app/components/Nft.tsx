@@ -96,7 +96,7 @@ const Nft = () => {
         <h1 className='font-black text-[145px] text-center lg:text-[384px] web-gradient w-full lg:w-auto z-20 mt-[-50%]'>NFTs</h1>
         <div className="absolute w-[50%] h-[50%]  lg:w-[30%] lg:h-[20%] left-[calc(60%+10px)] top-[calc(50%+50px)] white__gradient z-[-2]"/>
       </motion.div>
-      <div className=' items-center justify-center  mt-[3%]  lg:mt-[5%] lg:items-center lg:text-center'>
+      <div className=' items-center justify-center  lg:mt-[5%] lg:items-center lg:text-center'>
           <motion.div 
             whileInView={{ opacity: 1, x:0 }}
             initial={{opacity: 0 , x: -100}}

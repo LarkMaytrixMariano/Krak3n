@@ -82,7 +82,7 @@ const WebDesign = () => {
           viewport={{ once: true }}
           className='items-center justify-center pt-[40%] lg:pt-[0.5%]'>
           <div className='flex items-center justify-center lg:justify-end lg:items-end'>
-            <p className='font-normal text-[16px] lg:text-[24px] text-white text-center leading-8 lg:leading-[50px] px-4 lg:text-end lg:w-[50%] w-[100%] pt-15'>
+            <p className='font-normal text-[16px] lg:text-[24px] text-white text-center leading-8 lg:leading-[50px] px-4 lg:text-end lg:w-[50%] w-[100%] pt-[20px]'>
               We don’t just design, we craft digital
               experiences that are interactive, and visually
               stunning. Your website is your digital

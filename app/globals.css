@@ -36,8 +36,8 @@ body {
 
 
 .white__gradient {
-  background: radial-gradient(circle, #00c0fa 0%, #d6f3ffb2 100%);
-  filter: blur(110px);
+  background: radial-gradient(circle, #3acefc 0%, #fff1f1 150%);
+  filter: blur(150px);
   border-radius: 50%; /* This makes the div a circle */
 }
 
