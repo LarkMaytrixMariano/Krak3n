@@ -31,30 +31,6 @@ const Hero = () => {
   return (
 <section className='lg:w-screen overflow-hidden'>
   <div className='max-w-[1440px] mx-auto px-6 lg:px-20 3xl:px-0 flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row lg:h-[1250px] 4xl:h-[600px]  '>
-  {positions.map((pos, index) => (
-  <motion.div
-    key={index}
-    className="absolute -translate-x-1/2 h-[25%] opacity-50 z-[1000] white__gradient pointer-events-none top-[-10%]"
-    style={{
-      width: '200px',
-      // Modify clip-path to remove or minimize the top part of the polygon
-      clipPath: 'polygon(20% 0%, 55% 0%, 50% 100%, 45% 120%)',
-      transform: 'rotate(30deg)',
-      left: `${pos}%`, // Randomize the left position
-
-      // Apply strong blur to soften the edges
-      filter: 'blur(200px)',
-    }}
-    animate={{
-      opacity: [0, 0.5, 0], // Fade in and fade out
-    }}
-    transition={{
-      duration: 5, // Duration of the fade
-      repeat: Infinity, // Infinite loop
-      delay: Math.random() * 12, // Random delay for each ray to desynchronize
-    }}
-  ></motion.div>
-))}
     <div className='flex flex-col items-center w-full '>
       <motion.div
               whileInView={{ opacity: 1, y:0 }}

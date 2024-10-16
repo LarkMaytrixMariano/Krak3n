@@ -37,18 +37,18 @@ const EmblaCarousel = () => {
     }, [emblaApi])
 
     return (
-        <div className="embla displaynone lg:w-[928px] w-[420px]">
+        <div className="embla displaynone lg:w-[928px] w-[420px] ">
             <motion.div 
                                                     whileInView={{ opacity: 1, x: 0 }}
                                                     initial={{ opacity: 0, x: -100 }}
                                                     transition={{ duration: 1.5 }}
                                                     viewport={{ once: true }}  
-            className="embla__viewport shadow-xl slider_background" ref={emblaRef}>
+            className="embla__viewport shadow-xl slider_background " ref={emblaRef}>
                 <div 
                 className='embla__container'>
                     {WebDesignCard.map((link, index) => (
                         <div   
-                        className="embla__slide lg:flex lg:flex-row rounded-xl px-10 py-[9%] lg:py-[7%] my-5 text-sm lg:w-[1000px] w-[420px]" key={index}>
+                        className="embla__slide lg:flex lg:flex-row rounded-xl  py-[9%] lg:py-[7%] my-5 text-sm lg:w-[1000px] w-[420px]" key={index}>
                             <Image
                                 src={link.links}
                                 alt="webdesign"
@@ -56,7 +56,7 @@ const EmblaCarousel = () => {
                                 width={514}
                                 className='mx-auto'
                             />
-                            <div className='ml-2 mt-9 py-auto'>
+                            <div className='ml-2 mx-auto pr-[50px] my-auto py-auto '>
                                 <div className='lg:items-end lg:justify-end lg:text-end text-center items-center justify-center lg:mt-[5%] lg:w-[300px] leading-6'>
                                     <p className='text-[#DFFAFF] font-bold text-[24px] mt-5 lg:text-[#043F48]'>
                                         {link.title}

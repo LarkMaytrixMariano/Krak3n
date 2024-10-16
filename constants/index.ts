@@ -140,17 +140,17 @@ export const NAV_LINKS = [
 
   // Web Design Slider & Carousel
   export const WebDesignCard = [
-    { links: '/WebDesign1.svg', title: 'ClubMonteCarlo', description: 'A web3 NFT/Casino gaming platform project, launched on SOL and ETH network' },
+    { links: '/WebDesign1.svg', title: 'FUNToken', description: 'A Decentralized gaming and finance with one token. Fast, secure, and rewarding. Listed in Binance. Sea live version here: funtoken.io' },
     { links: '/WebDesign2.svg', title: 'Glitter Finance', description: 'Cryptocurrency Bridge innovator project. Link: glitterfinance.org' },
     { links: '/WebDesign3.svg', title: 'FreshSwap', description: 'A decentralized Finance project that solves most of DEX’s common issues.' },
     { links: '/WebDesign4.svg', title: 'Luster Protocol', description: 'A Cross-Chain, borrow and lend platform with institutional-grade algorithm.' },
     { links: '/WebDesign5.svg', title: 'Cryptok Lodgings', description: 'An exclusive membership group that aims to deliver alpha news to its community.' },
-    { links: '/WebDesign6.svg', title: 'Trident', description: 'An automated bot trading protocol that promised to generate a 2% ROI per day.' },
-    { links: '/WebDesign7.svg', title: 'Trident', description: 'An automated bot trading protocol that promised to generate a 2% ROI per day.' },
-    { links: '/WebDesign8.svg', title: 'Trident', description: 'An automated bot trading protocol that promised to generate a 2% ROI per day.' },
-    { links: '/WebDesign9.svg', title: 'Trident', description: 'An automated bot trading protocol that promised to generate a 2% ROI per day.' },
-    { links: '/WebDesign10.svg', title: 'Trident', description: 'An automated bot trading protocol that promised to generate a 2% ROI per day.' },
-    { links: '/WebDesign11.svg', title: 'Trident', description: 'An automated bot trading protocol that promised to generate a 2% ROI per day.' },
+    { links: '/WebDesign6.svg', title: 'House of Gains', description: 'An automated trading bot platform on the FTM Network, soon to be SONIC.' },
+    { links: '/WebDesign7.svg', title: 'Super Based Bot', description: 'Super Based Bot Automated Telegram, Discord, and browser base trading Bot.' },
+    { links: '/WebDesign8.svg', title: 'ClubMonteCarlo', description: 'A web3 casino project powered by NFTs.' },
+    { links: '/WebDesign9.svg', title: 'Vote for Pedro', description: 'A memecoin project on ETH Network.' },
+    { links: '/WebDesign10.svg', title: 'Grypto', description: 'Fiat to Crypto platform.' },
+    { links: '/WebDesign11.svg', title: 'Kermit On ETH', description: 'A memecoin project on ETH Network.' },
 ]
 
 

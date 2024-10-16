@@ -32,7 +32,8 @@ export default function RootLayout({
         <meta name="twitter:image" content="/kraken-og-image.png" /> */}
         <link rel="icon" href="/krakenlogo.svg" />
       </head>
-      <body>
+      <body style={{ overflowX: 'hidden' }} // Prevent horizontal overflow
+      >
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
