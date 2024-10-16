@@ -61,7 +61,7 @@ const Footer = () => {
             <ul className='flex gap-3 pb-5 max-lg:gap-2 max-sm:pb-0'>
               {SOCIALS.links.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href}>
+                  <Link href={link.href} target="_blank" rel="noopener noreferrer">
                     <Image 
                       src={link.icon}
                       alt={link.alt}
