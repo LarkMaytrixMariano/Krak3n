@@ -20,7 +20,7 @@ const ClientLayout: React.FC<ClientLayoutProps> = ({ children }) => {
   return (
     <div className={`bg-bg-img-6 bg-no-repeat bg-cover bg-center ${isHomePage ? 'lg:h-[1240px] h-[800px]' : 'lg:h-[auto] h-[auto] '}`}
 >
-          {positions.map((pos, index) => (
+          {/* {positions.map((pos, index) => (
           <motion.div
             key={index}
             className="absolute -translate-x-1/2 h-[75%] lg:h-[100%] opacity-50 z-[1000] white__gradient pointer-events-none"
@@ -45,7 +45,7 @@ const ClientLayout: React.FC<ClientLayoutProps> = ({ children }) => {
               delay: Math.random() * 15, // Random delay for each ray to desynchronize
             }}
           ></motion.div>
-        ))}
+        ))} */}
       <Navbar />
       <main className="relative overflow-hidden">
         {children}
