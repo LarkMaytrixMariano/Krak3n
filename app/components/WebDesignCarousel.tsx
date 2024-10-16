@@ -57,13 +57,13 @@ const NextJsCarousel = () => {
                                     {link.description}
                                 </p>
                             </div>
-                            <motion.div 
+                            {/* <motion.div 
                                                initial="initial"
                                                animate="animate"
                                                variants={variants}                            
                             className='flex lg:justify-end justify-center'>
                                 <button className="w-[180px] rounded-lg bg-[#043F48] bg-opacity-90 text-[#DFFAFF] py-3 mt-8 font-medium leading-3 text-[14px]">Sea on Figma</button>
-                            </motion.div>
+                            </motion.div> */}
                         </div>
                     </div>
                 ))}

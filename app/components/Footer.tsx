@@ -57,22 +57,22 @@ const Footer = () => {
           </div>
           <div className="absolute z-[-2] w-[15%] h-[30%] right-[calc(5%+10px)] top-[calc(30%+50px)] white__gradient"/>
           <div className='flex flex-col gap-5 mt-10 md:mt-5 text-white max-lg:text-xs max-md:mt-1'>
-            <FooterColumn title={SOCIALS.title}>
-              <ul className='flex gap-3 pb-5 max-lg:gap-2 max-sm:pb-0'>
-                {SOCIALS.links.map((link) => (
-                  <li key={link}>
-                    <Link href="/">
-                      <Image 
-                        src={link}
-                        alt="logo"
-                        width={25}
-                        height={25}
-                      />
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </FooterColumn>
+          <FooterColumn title={SOCIALS.title}>
+            <ul className='flex gap-3 pb-5 max-lg:gap-2 max-sm:pb-0'>
+              {SOCIALS.links.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href}>
+                    <Image 
+                      src={link.icon}
+                      alt={link.alt}
+                      width={25}
+                      height={25}
+                    />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </FooterColumn>
           </div>
         </div>
   

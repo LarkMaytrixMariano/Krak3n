@@ -56,10 +56,26 @@ export const NAV_LINKS = [
   export const SOCIALS = {
     title: 'Lets Chat!',
     links: [
-      '/TG ICON.png',
-      '/DISCORD ICON.png',
-      '/TWT1.png',
-      '/TWT2.png',
+      {
+        href: 'https://t.me/KrakenGFX', // Replace with your Telegram link
+        icon: '/TG ICON.png',
+        alt: 'Telegram',
+      },
+      {
+        href: 'https://discordapp.com/users/821711981366083584', // Replace with your Discord invite link
+        icon: '/DISCORD ICON.png',
+        alt: 'Discord',
+      },
+      {
+        href: 'mailto:krakengfxweb3@gmail.com', // Replace with your Twitter link
+        icon: '/TWT1.png',
+        alt: 'Twitter 1',
+      },
+      {
+        href: 'https://x.com/_KrakenGFX', // Replace with another Twitter link or remove if not needed
+        icon: '/TWT2.png',
+        alt: 'Twitter 2',
+      },
     ],
   };
 

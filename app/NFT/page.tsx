@@ -16,7 +16,9 @@ const page = () => {
                         transition={{ duration: 1.5 }}
                         viewport={{ once: true }}    
         className=''>
-            <h1 className='font-black lg:text-[100px] kraken-gradient text-[70px] '>NFTs</h1>
+            <h1 className='font-black kraken-gradient text-[70px] lg:hidden block'>NFTs</h1>
+            <h1 className='font-black text-[100px] kraken-gradient lg:block hidden'>NFT PROJECTS</h1>
+
         </motion.div>
         <NftSlider />
         <NftCarousel />
